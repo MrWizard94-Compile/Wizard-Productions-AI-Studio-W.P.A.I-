@@ -76,6 +76,17 @@ The WPAI root stays a lightweight registry instead of a Git submodule superproje
 | `Gaming/Minecraft/Mods-1.20.1-Forge/Valkyrien Portals` | `Valkyrien-Portals` |
 | `Gaming/Minecraft/Mods-1.20.1-Forge/VS2 Ship Systems` | `VS2-Ship-Systems` |
 
+## Baseline publication snapshot — 2026-07-28
+
+The following project roots received an audited, private source baseline during the registry rollout. Each `main` branch was published to its listed private repository unless a pre-existing, unrelated remote history required a non-destructive baseline branch.
+
+- **Software:** `APODE`, `AtoZ-Grabber`, `BitBurner-Scripts`, `Bundle-Social`, `FUSE`, `GitHubCodeCrawler`, `HidoutHunter`, `MixinFieldManual`, `PyMason`, `Random-Story-Generator`, `RickPrime`, `Workstation`.
+- **Software with preserved unrelated remote `main`:** `repoforge` and `WPAI-Explorer` publish the local source baseline on `baseline/local-source-20260728`; their existing remote `main` histories were not overwritten.
+- **AI research:** `AutomationLab`, `Claude-Playground`, `Deep-Research-Engine`, `Operation-Pinky-and-the-Brain`, `Research-Crawler`, `Topological-Hydro-Computational-Engine`, `VeriForge`.
+- **Games and Minecraft:** `Cinderforge`, `Cinderforge-4-3`, `TerraBlock`, `Minecraft-Mod-Test-Suite`, `OmniFix`, `Steampunk-Factory-Mod`, `Steampunk-Factory-Resource-Pack`, `Adaptive-Attacks`, `Adaptive-Bosses`, `Living-Villages`.
+
+All remaining catalogued project roots are linked to their private remotes. Existing projects with active worktrees were intentionally not auto-committed, rebased, merged, or reset during this rollout.
+
 ## Deliberate exclusions
 
 - `Archives/`, `Tools/`, `Workspace/`, project backups, generated dependencies, build output, local model files, and runtime state are not standalone product repositories.
