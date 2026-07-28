@@ -1,0 +1,21 @@
+# The WPAI root is a private company registry, not a source-code monorepo.
+# Each project directory owns its own Git history and origin.
+/.agents/
+/.claude/
+/AI-Research/
+/Archives/
+/Brand/
+/Games/
+/Gaming/
+/Graphics/
+/Music/
+/Quantum/
+/Software/
+/Tools/
+/Workspace/
+/grok-workspace/
+/llm/
+
+# Never place credentials, local runtime state, generated assets, or media in the root registry.
+/MyGrokKeys.md
+*.mp4

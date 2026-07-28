@@ -1,0 +1,8 @@
+# These locked policy documents use Markdown's two-space hard-break syntax.
+# Preserve their exact, integrity-checked content without treating that syntax
+# as a trailing-whitespace defect in root-registry diffs.
+"AGENTS Constitution/**" whitespace=-trailing-space
+AGENTS.md whitespace=-trailing-space
+SOUL.md whitespace=-trailing-space
+SOUL.md.legacy-pre-pack-20260727-205752 whitespace=-trailing-space
+SOULv2.0.0.md whitespace=-trailing-space
