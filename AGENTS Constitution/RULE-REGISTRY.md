@@ -3,7 +3,7 @@
 ```
 Document: Rule Registry
 Module ID: MOD-GOV-REG-001
-Version: 1.2.1
+Version: 1.3.0
 Status: Binding (governance)
 Authority: AGENTS.md
 Applies When: Creating, amending, or citing Rule IDs; audits; delivery reports
@@ -183,6 +183,7 @@ Overrides: None
 | HW-MEM-001 | Allocation discipline | `specialist/CONSTRAINED-HARDWARE.md` | Active |
 | HW-ALT-001 | Document cost; provide lighter alternative | `specialist/CONSTRAINED-HARDWARE.md` | Active |
 | COST-TOKEN-001 | Token/compute economics awareness | `specialist/CONSTRAINED-HARDWARE.md` | Active |
+| COST-CACHE-001 | Bounded task-scoped agent working cache | `specialist/CONSTRAINED-HARDWARE.md` | Active |
 
 ---
 
@@ -232,6 +233,7 @@ Overrides: None
 
 | Version | Date | Notes |
 |---------|------|-------|
+| 1.3.0 | 2026-08-26 | Added `COST-CACHE-001` for bounded, revalidated agent working-cache use. |
 | 1.0.0 | 2026-07-27 | Initial registry (implicit across modules) |
 | 1.1.0 | 2026-07-27 | Hardened: single registry, alias ban, integrity IDs |
 

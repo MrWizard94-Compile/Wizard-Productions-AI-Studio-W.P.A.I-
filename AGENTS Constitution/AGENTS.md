@@ -1,12 +1,12 @@
 # AGENTS.md — Constitution of an AI Empire
 
-**Version**: 5.0.1  
-**Last Updated**: 2026-07-28  
+**Version**: 5.1.0  
+**Last Updated**: 2026-08-26  
 **Status**: Binding — Universal Production Constitution (**LOCKED** portable pack)  
 **Classification**: Level 1 — Constitution (Immutable cross-project quality law)  
 **Document ID**: MOD-CONST-ROOT-001  
 **Module ID**: MOD-CONST-ROOT-001  
-**Pack version**: **5.0.1** ([VERSION](VERSION), [PACK.md](PACK.md), [LOCK.md](LOCK.md))  
+**Pack version**: **5.1.0** ([VERSION](VERSION), [PACK.md](PACK.md), [LOCK.md](LOCK.md))  
 
 **Purpose**: Sovereign entry point for quality law. Process law lives in [SOP.md](SOP.md). Execution detail lives in scoped modules. Project-local law lives in each project’s own docs.
 
@@ -68,6 +68,7 @@ Full authority text: [constitution/01-AUTHORITY-AND-PRECEDENCE.md](constitution/
 | **DOC-SYNC-001** | Documentation synchronized with implementation | [standards/DOCUMENTATION.md](standards/DOCUMENTATION.md) |
 | **SEC-INPUT-001** | Untrusted input validated; least privilege; no secrets in source | [standards/SECURITY.md](standards/SECURITY.md) |
 | **CONST-CONTRACT-001** | Human sovereign; AI owns full implementation and self-audit | [constitution/02-HUMAN-AI-CONTRACT.md](constitution/02-HUMAN-AI-CONTRACT.md) |
+| **COST-CACHE-001** | Bounded, revalidated agent working cache for repeated non-sensitive context | [specialist/CONSTRAINED-HARDWARE.md](specialist/CONSTRAINED-HARDWARE.md) |
 
 **No alias Rule IDs** (`GOV-REG-003`). Full catalog: [RULE-REGISTRY.md](RULE-REGISTRY.md).
 
@@ -94,7 +95,7 @@ The **gate stays unified in this file**. Items link to modules for detail; they 
 | 7 | **Performance reasoning** — Hot paths reviewed; budgets respected | [PERFORMANCE](standards/PERFORMANCE.md) |
 | 8 | **Version/stack fidelity** — Match declared versions and idioms | [ENGINEERING](standards/ENGINEERING.md) |
 | 9 | **Full package ready** — Complete files or clean multi-file package; no temp junk | [DELIVERY](operations/DELIVERY.md), [REVIEW-PACKAGING](collaboration/REVIEW-PACKAGING.md) |
-| 10 | **Resource & constraint check** — Hardware, cognitive load, cost where relevant | [CONSTRAINED-HARDWARE](specialist/CONSTRAINED-HARDWARE.md) |
+| 10 | **Resource & constraint check** — Hardware, cognitive load, token/compute cost, and working-cache freshness where relevant | [CONSTRAINED-HARDWARE](specialist/CONSTRAINED-HARDWARE.md) |
 | 11 | **Reproducibility & determinism** — Stable builds/tests/generators | [ENGINEERING](standards/ENGINEERING.md), [DEPENDENCIES](standards/DEPENDENCIES.md) |
 | 12 | **IP / invention hygiene** *(if applicable)* — Claims, invariants, notes | [IP-AND-INVENTION](specialist/IP-AND-INVENTION.md) |
 | 13 | **Multi-agent coordination** *(if applicable)* — One coherent package | [MULTI-AGENT](collaboration/MULTI-AGENT.md) |
@@ -157,6 +158,7 @@ Full text: [constitution/03-DEFINITION-OF-DONE.md](constitution/03-DEFINITION-OF
 | Feature implementation | [SECURITY](standards/SECURITY.md), [DELIVERY](operations/DELIVERY.md), [REVIEW-PACKAGING](collaboration/REVIEW-PACKAGING.md) |
 | Security-sensitive work | [SECURITY](standards/SECURITY.md), [OBSERVABILITY](standards/OBSERVABILITY.md) |
 | Performance work | [PERFORMANCE](standards/PERFORMANCE.md), [CONSTRAINED-HARDWARE](specialist/CONSTRAINED-HARDWARE.md) if relevant |
+| Repeated stable context / high token or compute cost | [CONSTRAINED-HARDWARE](specialist/CONSTRAINED-HARDWARE.md) (`COST-CACHE-001`) |
 | Dependency / supply-chain | [DEPENDENCIES](standards/DEPENDENCIES.md), [SECURITY](standards/SECURITY.md) |
 | Refactor | [REFACTORING](operations/REFACTORING.md), [VERSION-CONTROL](operations/VERSION-CONTROL.md) |
 | Port / migration | [MIGRATIONS](operations/MIGRATIONS.md), [TESTING](standards/TESTING.md) |
@@ -182,6 +184,7 @@ Full text: [constitution/03-DEFINITION-OF-DONE.md](constitution/03-DEFINITION-OF
 | Multiple agents | `MULTI-AGENT.md` |
 | Invention claims | `IP-AND-INVENTION.md` |
 | Tight RAM/CPU/GPU | `CONSTRAINED-HARDWARE.md` |
+| Repeated stable context / token-sensitive work | `CONSTRAINED-HARDWARE.md` (`COST-CACHE-001`) |
 
 ---
 
@@ -197,7 +200,7 @@ When rules conflict, apply this order:
 4. Security & input validation (`SEC-INPUT-001`)  
 5. Version/stack fidelity + research-first (`ENG-STACK-001`, `ENG-RESEARCH-001`)  
 6. Documentation, observability, invention hygiene (`DOC-SYNC-001`, `OBS-LOG-001`, `IP-INVENTION-001`)  
-7. Resource / hardware / cognitive / cost constraints (`HW-RESPECT-001`, `COST-TOKEN-001`)  
+7. Resource / hardware / cognitive / cost constraints (`HW-RESPECT-001`, `COST-TOKEN-001`, `COST-CACHE-001`)  
 8. Performance (after the above) (`PERF-HOT-001`)  
 9. Multi-agent and empire-scale consistency (`AI-COORD-001`)  
 10. Style and secondary process detail  
@@ -335,6 +338,11 @@ SOP steps must satisfy at least: `ENG-WARN-001`, `TEST-BEHAVIOR-001`, `DOC-SYNC-
 ---
 
 ## Changelog
+
+### 5.1.0 — 2026-08-26
+
+* **Bounded working-cache discipline**: added `COST-CACHE-001`, requiring agents to save and reuse only the minimum verified non-sensitive working set, then revalidate it at every mutable-state or publication boundary.
+* **Token-efficiency integration**: Section 0, the applicability matrix, and conflict ordering now make cache freshness an explicit resource-and-cost concern without making cached data a source of truth.
 
 ### 5.0.1 — 2026-07-28
 

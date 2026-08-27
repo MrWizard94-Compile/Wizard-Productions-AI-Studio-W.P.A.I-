@@ -4,7 +4,7 @@
 
 | | |
 |--|--|
-| **Pack version** | **5.0.1** (`VERSION`) |
+| **Pack version** | **5.1.0** (`VERSION`) |
 | **Lock** | **LOCKED baseline** — [LOCK.md](LOCK.md) |
 | **SOUL** | [AGENTS.md](AGENTS.md) |
 | **Process** | [SOP.md](SOP.md) |
@@ -37,6 +37,11 @@ This folder is self-contained. **Move or rename it freely.** Re-run verify after
 * `standards/DOCUMENTATION.md`  
 
 Then load modules per the applicability matrix in `AGENTS.md`.
+
+For repeated stable, non-sensitive context or high token/compute work, load
+`specialist/CONSTRAINED-HARDWARE.md` and apply `COST-CACHE-001`: reuse a bounded
+agent working cache, but revalidate it before state-changing or publication
+actions.
 
 ---
 

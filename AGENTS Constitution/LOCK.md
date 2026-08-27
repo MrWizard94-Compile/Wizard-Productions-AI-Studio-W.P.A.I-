@@ -3,7 +3,7 @@
 ```
 Document: Pack Lock
 Module ID: MOD-GOV-LOCK-001
-Version: 5.0.1
+Version: 5.1.0
 Status: Binding (governance)
 Authority: AGENTS.md
 Applies When: Amending, forking, or releasing this pack after lockdown
@@ -21,7 +21,7 @@ Overrides: None
 
 | Field | Value |
 |-------|-------|
-| **Pack VERSION** | **5.0.1** |
+| **Pack VERSION** | **5.1.0** |
 | **Lock state** | **LOCKED baseline** |
 | **Meaning** | Structure and quality law are production-stable; changes are deliberate releases, not casual edits |
 

@@ -49,6 +49,15 @@ function Read-Rel([string]$rel) {
 $utc = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss") + "Z"
 $packVer = (Read-Rel "VERSION")
 if ($packVer) { $packVer = $packVer.Trim() } else { $packVer = "?" }
+$identityFiles = @("AGENTS.md", "PACK.md", "LOCK.md", "ADOPT.md", "README.md", "MODULE-INDEX.md", "Modularize.md")
+$identityMismatches = @()
+foreach ($identityFile in $identityFiles) {
+    $identityText = Read-Rel $identityFile
+    if (-not $identityText -or $identityText -notmatch [regex]::Escape($packVer)) {
+        $identityMismatches += $identityFile
+    }
+}
+$identityOk = $packVer -match '^\d+\.\d+\.\d+$' -and $identityMismatches.Count -eq 0
 
 L "# FULL AGENTS Constitution Self-Run (including SOP)"
 L ""
@@ -201,7 +210,8 @@ $gateIds = @(
     "CONST-GATE-001", "CONST-DONE-001", "CONST-COMPLETE-001", "CONST-DEP-001",
     "ENG-WARN-001", "TEST-BEHAVIOR-001", "DOC-SYNC-001", "REV-PACK-001",
     "REL-PACKAGE-001", "SOP-PHASE-001", "SOP-GATE-001", "GOV-INT-001", "GOV-REG-003",
-    "CONST-ONEHOME-001", "CONST-AUTH-001", "SEC-INPUT-001", "SEC-SECRET-001"
+    "CONST-ONEHOME-001", "CONST-AUTH-001", "SEC-INPUT-001", "SEC-SECRET-001",
+    "COST-CACHE-001"
 )
 L "| Rule ID | In registry | Status |"
 L "|---------|-------------|--------|"
@@ -212,6 +222,10 @@ foreach ($id in $gateIds) {
     if ($in) { L "| ``$id`` | Yes | Pass |" }
     else { L "| ``$id`` | No | **Fail** |"; Fail "Rule ID not in registry: $id" }
 }
+$cacheLaw = Read-Rel "specialist/CONSTRAINED-HARDWARE.md"
+$cacheRuleOk = $registry -match [regex]::Escape("| COST-CACHE-001 |") -and
+    $cacheLaw -match "COST-CACHE-001" -and
+    (Read-Rel "AGENTS.md") -match "COST-CACHE-001"
 
 # =============================================================================
 Section "7. Section 0 — Pre-Delivery Checklist (pack as deliverable)"
@@ -227,9 +241,9 @@ $gateRows = @(
     @("5", "Docs synchronized", $(if ((Test-Rel "README.md") -and (Test-Rel "Modularize.md") -and $phaseMissing -eq 0) { "Pass" } else { "Fail" }), "README + SOP docs"),
     @("6", "Security & validation", $sec6, "SECURITY.md present; no runtime I/O; no secrets"),
     @("7", "Performance reasoning", "Pass", "Always-load set + applicability matrix"),
-    @("8", "Version/stack fidelity", $(if ((Read-Rel "AGENTS.md") -match "5\.0\.1" -and $packVer -match "^5\.0\.1") { "Pass" } else { "Fail" }), "Pack 5.0.1 locked baseline"),
+    @("8", "Version/stack fidelity", $(if ($identityOk) { "Pass" } else { "Fail" }), "Pack version $packVer synchronized across active identity documents"),
     @("9", "Full package ready", "Pass", "Drop-in movable folder"),
-    @("10", "Resource & constraint", "Pass", "Selective module load; portable SoT"),
+    @("10", "Resource & constraint", $(if ($cacheRuleOk) { "Pass" } else { "Fail" }), "COST-CACHE-001 bounded cache with source-of-truth revalidation"),
     @("11", "Reproducibility", $(if ($vExit -eq 0) { "Pass" } else { "Fail" }), "Deterministic tools"),
     @("12", "IP / invention hygiene", "N/A", "Governance pack; not novel claim delivery"),
     @("13", "Multi-agent coordination", "N/A", "Single-agent full self-run"),
@@ -266,6 +280,8 @@ Section "9. Authority & anti-fragmentation spot checks"
 $agents = Read-Rel "AGENTS.md"
 if ($agents -match "CONST-GATE-001") { Pass "Gate ID in root" } else { Fail "Gate ID missing in root" }
 if ($agents -match "Pre-Delivery Checklist") { Pass "Gate checklist in root" } else { Fail "Gate checklist missing" }
+if ($cacheRuleOk) { Pass "COST-CACHE-001 is registered, canonical, and surfaced in root law" }
+else { Fail "COST-CACHE-001 integration missing from registry, canonical module, or root law" }
 
 $gateCopies = 0
 Get-ChildItem $PackRoot -Recurse -Filter *.md | Where-Object { $_.FullName -notmatch '_archive' } | ForEach-Object {

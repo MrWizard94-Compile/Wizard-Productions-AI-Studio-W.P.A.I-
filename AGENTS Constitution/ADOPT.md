@@ -3,7 +3,7 @@
 ```
 Document: Pack Adoption Guide
 Module ID: MOD-GOV-ADOPT-001
-Version: 5.0.1
+Version: 5.1.0
 Status: Binding guidance (how to attach projects)
 Authority: AGENTS.md
 Applies When: Installing, moving, or linking the constitution pack into a project

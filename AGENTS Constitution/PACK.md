@@ -3,7 +3,7 @@
 ```
 Document: Pack Identity & Portability Contract
 Module ID: MOD-GOV-PACK-001
-Version: 5.0.1
+Version: 5.1.0
 Status: Binding (governance)
 Authority: AGENTS.md
 Applies When: Moving, copying, adopting, or releasing this pack
@@ -22,7 +22,7 @@ Overrides: None
 | Field | Value |
 |-------|-------|
 | **Pack name** | AGENTS Constitution |
-| **Pack version** | **5.0.1** (see also `VERSION`) |
+| **Pack version** | **5.1.0** (see also `VERSION`) |
 | **Lock state** | **LOCKED baseline** — see [LOCK.md](LOCK.md) |
 | **Classification** | Universal, reusable, movable quality + process law pack |
 | **SOUL** | `AGENTS.md` |
@@ -100,6 +100,7 @@ This folder is a **self-contained constitution pack**. It may live on a desktop,
 
 | Release | Meaning |
 |---------|---------|
+| **5.1.0** | Bounded, revalidated agent working-cache discipline (`COST-CACHE-001`) for token/compute efficiency without replacing sources of truth |
 | **5.0.0** | Universal portable pack solidification |
 | **5.0.1** | Cleanup + lockdown baseline (`LOCK.md`, non-law surfaces labeled, host-coupling scrub) |
 

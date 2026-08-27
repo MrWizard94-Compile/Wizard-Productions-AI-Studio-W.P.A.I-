@@ -47,6 +47,11 @@ L "## 2. Deep structural checks"
 
 $agentsPath = Join-Path $PackRoot "AGENTS.md"
 $agents = [IO.File]::ReadAllText($agentsPath)
+$registryText = [IO.File]::ReadAllText((Join-Path $PackRoot "RULE-REGISTRY.md"))
+$cacheLaw = [IO.File]::ReadAllText((Join-Path $PackRoot "specialist\CONSTRAINED-HARDWARE.md"))
+$cacheRuleOk = $agents -match "COST-CACHE-001" -and
+    $registryText -match [regex]::Escape("| COST-CACHE-001 |") -and
+    $cacheLaw -match "COST-CACHE-001"
 
 # Gate uniqueness
 $gateFiles = @()
@@ -104,6 +109,8 @@ foreach ($m in [regex]::Matches($agents, '\]\((?<u>[^)]+)\)')) {
     }
 }
 if ($broken -eq 0) { Pass "All AGENTS.md relative links resolve" }
+if ($cacheRuleOk) { Pass "COST-CACHE-001 is registered, canonical, and surfaced in root law" }
+else { Fail "COST-CACHE-001 integration missing from root, registry, or canonical module" }
 
 # Version
 if ($agents -match '5\.\d+\.\d+') { Pass "AGENTS.md version 5.x (universal pack)" } else { Fail "AGENTS.md not on 5.x" }
@@ -142,12 +149,12 @@ $gate = @(
     @("2 Dependency-first", "Pass", "Registry/index/integrity define pack dependencies"),
     @("3 Zero warnings", "Pass", "verify-pack exit 0; ID integrity clean"),
     @("4 Tests exist & pass", "Pass", "verify-pack.ps1 + this self-audit"),
-    @("5 Docs synchronized", "Pass", "README/Modularize/registry/index match v4.1"),
+    @("5 Docs synchronized", "Pass", "README/Modularize/registry/index match the active pack identity"),
     @("6 Security", "Pass", "No secrets; SEC modules for consumers"),
     @("7 Performance reasoning", "Pass", "Always-load set + conditional matrix"),
     @("8 Version/stack fidelity", "Pass", "MOD-*-001 IDs; semver headers"),
     @("9 Full package ready", "Pass", "Complete pack drop-in"),
-    @("10 Resource/constraint", "Pass", "Selective load; cognitive packaging"),
+    @("10 Resource/constraint", $(if ($cacheRuleOk) { "Pass" } else { "Fail" }), "COST-CACHE-001 bounded cache with source-of-truth revalidation"),
     @("11 Reproducibility", "Pass", "Deterministic verify script"),
     @("12 IP hygiene", "N/A", "Governance pack, not invention claim"),
     @("13 Multi-agent", "N/A", "Single-agent amend; rules present for consumers"),
@@ -173,6 +180,8 @@ L "| ENG-WARN-001 | Pass | verify-pack treated as zero-defect suite |"
 L "| TEST-BEHAVIOR-001 | Pass | Tests assert intended integrity behavior |"
 L "| DOC-SYNC-001 | Pass | Docs match structure |"
 L "| SEC-INPUT-001 | N/A | No runtime untrusted input in pack |"
+if ($cacheRuleOk) { L "| COST-CACHE-001 | Pass | Bounded agent-cache rule is registered and source-of-truth guarded |" }
+else { L "| COST-CACHE-001 | **Fail** | Root, registry, or canonical module is missing the rule |"; $script:failCount++ }
 L "| GOV-INT-001 | Pass | verify-pack |"
 L "| GOV-REG-003 | Pass | Alias ban held |"
 L "| CONST-ONEHOME-001 | Pass | Gate only in root |"
