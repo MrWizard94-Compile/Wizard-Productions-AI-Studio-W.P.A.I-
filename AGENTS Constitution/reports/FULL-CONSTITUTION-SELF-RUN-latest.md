@@ -2,9 +2,9 @@
 
 | Field | Value |
 |-------|-------|
-| **Pack root** | `C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace` |
-| **Pack VERSION** | 5.0.1 |
-| **Date (UTC)** | 2026-07-28 00:43:47Z |
+| **Pack root** | `C:\WPAI\AGENTS Constitution` |
+| **Pack VERSION** | 5.1.0 |
+| **Date (UTC)** | 2026-08-27 00:22:51Z |
 | **Constitution** | AGENTS.md (see header) |
 | **SOP** | SOP-PROD-001 |
 | **Portability** | Path-independent; root may be moved |
@@ -13,7 +13,7 @@
 ## 0. Pack root resolution
 
 **PASS:** Pack root resolves
-**PASS:** VERSION present (5.0.1)
+**PASS:** VERSION present (5.1.0)
 **PASS:** PACK.md present
 **PASS:** LOCK.md present
 **PASS:** ADOPT.md present
@@ -36,12 +36,12 @@ Tools resolve pack root from script location or -PackRoot (GOV-PORT-001). Folder
 
 ```
 AGENTS Constitution integrity check
-Pack root: C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace
+Pack root: C:\WPAI\AGENTS Constitution
 
-Pack VERSION:                5.0.1
-Active Rule IDs in registry: 136
-Rule IDs cited in pack:      141
-Markdown files scanned:      60
+Pack VERSION:                5.1.0
+Active Rule IDs in registry: 137
+Rule IDs cited in pack:      142
+Markdown files scanned:      65
 
 RESULT: PASS (GOV-INT-001)
 ```
@@ -52,19 +52,19 @@ RESULT: PASS (GOV-INT-001)
 ```
 # Pack Self-Audit
 
-**Pack root:** `C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace`
-**Date (UTC):** 2026-07-28 00:43:48Z
+**Pack root:** `C:\WPAI\AGENTS Constitution`
+**Date (UTC):** 2026-08-27 00:22:55Z
 **Rules:** CONST-GATE-001, CONST-DONE-001, GOV-INT-001, GOV-SYNC-001
 
 ## 1. GOV-INT-001 verify-pack
 ```
 AGENTS Constitution integrity check
-Pack root: C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace
+Pack root: C:\WPAI\AGENTS Constitution
 
-Pack VERSION:                5.0.1
-Active Rule IDs in registry: 136
-Rule IDs cited in pack:      141
-Markdown files scanned:      60
+Pack VERSION:                5.1.0
+Active Rule IDs in registry: 137
+Rule IDs cited in pack:      142
+Markdown files scanned:      65
 
 RESULT: PASS (GOV-INT-001)
 ```
@@ -75,8 +75,9 @@ PASS: Section 0 gate unified in AGENTS.md only
 PASS: No forbidden aliases outside deprecation/governance docs
 PASS: No incomplete-work markers (TODO:/FIXME: as open work)
 PASS: All AGENTS.md relative links resolve
+PASS: COST-CACHE-001 is registered, canonical, and surfaced in root law
 PASS: AGENTS.md version 5.x (universal pack)
-PASS: VERSION file 5.0.1
+PASS: VERSION file 5.1.0
 PASS: PACK.md present
 PASS: LOCK.md present
 PASS: ADOPT.md present
@@ -90,22 +91,21 @@ PASS: Always-load present: standards/DOCUMENTATION.md
 
 | # | Check | Result |
 |---|--------|--------|
-| 1 Completeness | Pass | Required tree + modules present; no open stubs |
 ... (truncated; full: reports/SELF-AUDIT-latest.md) ...
 | REV-PACK-001 | Pass | This report |
 
 ## 5. MANIFEST (pack inventory summary)
 
-- Markdown files (ex-archive): **60**
-- All files (ex-archive): **66**
+- Markdown files (ex-archive): **65**
+- All files (ex-archive): **76**
 - Active Rule IDs (registry rows): see verify-pack output
 
 ## 6. Result
 
-**OVERALL: PASS** - pack satisfies CONST-GATE-001 as applied to itself.
+**OVERALL: PASS** — pack satisfies CONST-GATE-001 as applied to itself.
 
 
-Wrote C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace\reports\SELF-AUDIT-latest.md
+Wrote C:\WPAI\AGENTS Constitution\reports\SELF-AUDIT-latest.md
 ```
 **PASS:** self-audit exit 0
 
@@ -149,6 +149,7 @@ Wrote C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace\report
 | `CONST-AUTH-001` | Yes | Pass |
 | `SEC-INPUT-001` | Yes | Pass |
 | `SEC-SECRET-001` | Yes | Pass |
+| `COST-CACHE-001` | Yes | Pass |
 
 ## 7. Section 0 — Pre-Delivery Checklist (pack as deliverable)
 
@@ -161,9 +162,9 @@ Wrote C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace\report
 | 5 | Docs synchronized | **Pass** | README + SOP docs |
 | 6 | Security & validation | **Pass** | SECURITY.md present; no runtime I/O; no secrets |
 | 7 | Performance reasoning | **Pass** | Always-load set + applicability matrix |
-| 8 | Version/stack fidelity | **Pass** | Pack 5.0.1 locked baseline |
+| 8 | Version/stack fidelity | **Pass** | Pack version 5.1.0 synchronized across active identity documents |
 | 9 | Full package ready | **Pass** | Drop-in movable folder |
-| 10 | Resource & constraint | **Pass** | Selective module load; portable SoT |
+| 10 | Resource & constraint | **Pass** | COST-CACHE-001 bounded cache with source-of-truth revalidation |
 | 11 | Reproducibility | **Pass** | Deterministic tools |
 | 12 | IP / invention hygiene | **N/A** | Governance pack; not novel claim delivery |
 | 13 | Multi-agent coordination | **N/A** | Single-agent full self-run |
@@ -187,6 +188,7 @@ Wrote C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace\report
 
 **PASS:** Gate ID in root
 **PASS:** Gate checklist in root
+**PASS:** COST-CACHE-001 is registered, canonical, and surfaced in root law
 **PASS:** Gate unified (exactly one full checklist)
 **PASS:** Alias ban held outside governance/report docs
 
@@ -201,8 +203,8 @@ Wrote C:\Users\Bulkl\OneDrive\Desktop\AGENTS Constitution Human workspace\report
 
 ## 11. Inventory counts
 
-- Markdown (ex-archive): **60**
-- All files (ex-archive): **66**
+- Markdown (ex-archive): **65**
+- All files (ex-archive): **76**
 - Module paths checked: **45**
 - SOP phase artifacts: **13**
 

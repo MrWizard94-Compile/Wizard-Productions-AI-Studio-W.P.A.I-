@@ -1,0 +1,34 @@
+{
+  "description": "WPAI read-first context hook for trusted local Codex sessions.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/.codex/hooks/wpai-session-context.mjs\"",
+            "commandWindows": "node \"C:\\WPAI\\.codex\\hooks\\wpai-session-context.mjs\"",
+            "timeout": 3,
+            "statusMessage": "Loading WPAI session context",
+            "additionalContextLimit": 900
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/.codex/hooks/wpai-session-context.mjs\"",
+            "commandWindows": "node \"C:\\WPAI\\.codex\\hooks\\wpai-session-context.mjs\"",
+            "timeout": 3,
+            "statusMessage": "Loading WPAI subagent context",
+            "additionalContextLimit": 900
+          }
+        ]
+      }
+    ]
+  }
+}

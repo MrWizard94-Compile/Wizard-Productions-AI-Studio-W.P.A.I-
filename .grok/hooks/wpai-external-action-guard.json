@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"C:\\WPAI\\.grok\\hooks\\wpai-external-action-guard.mjs\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

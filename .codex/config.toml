@@ -1,0 +1,7 @@
+[mcp_servers.wpai_vault]
+command = "node"
+args = ["C:\\WPAI\\Software\\obsidian-mcp-server\\dist\\index.js"]
+cwd = "C:\\WPAI\\Software\\obsidian-mcp-server"
+env = { OBSIDIAN_VAULT_PATH = "C:\\WPAI" }
+startup_timeout_sec = 30
+tool_timeout_sec = 120
