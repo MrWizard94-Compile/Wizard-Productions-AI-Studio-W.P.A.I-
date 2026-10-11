@@ -12,13 +12,13 @@ The human director sets vision and priorities. AI collaborators own detailed inv
 
 **Authoritative sources:**
 
-- `AGENTS Constitution` — company-wide operating constitution.
+- [WPAI Constitution](https://github.com/MrWizard94-Compile/Agents-Constitution) — company-wide operating constitution; accepted GitHub `main` is authoritative.
 - `WPAI-ROADMAP.md` — division sequence, activation gates, and 90-day company plan.
 - `REVENUE-PLAN.md` — commercial priorities and distribution-first policy.
 
 ## 2. Working Rules
 
-- Treat `AGENTS Constitution` as the top-level operating standard: complete, documented, tested, maintainable work; protect Git history and documentation as cognitive infrastructure.
+- Treat the canonical WPAI Constitution as the top-level operating standard: complete, documented, tested, maintainable work; protect Git history and documentation as cognitive infrastructure. The local `AGENTS Constitution` folder is a historical pack pending audited retirement, not live law.
 - Before entering a project, read its `AGENTS.md`, `CLAUDE.md`, README, specification, and design documents when present. Known project-local instruction files exist in AI Research projects and PyMason.
 - Keep context source-linked. Label a statement as **verified**, **director decision**, or **needs verification** rather than guessing.
 - Do not open, copy, log, or place credentials in this record. Use placeholders and project-local secret-handling procedures only.

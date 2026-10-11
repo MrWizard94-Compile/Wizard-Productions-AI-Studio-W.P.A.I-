@@ -1,7 +1,9 @@
-# SOUL.md — Superseded
+# SOUL.md — retired compatibility pointer
 
-**Legacy empire constitutions (SOUL.md / monolith AGENTS) are retired.**
+SOUL and SOUL v2 are historical names for the active
+[WPAI Constitution](https://github.com/MrWizard94-Compile/Agents-Constitution).
+The accepted GitHub `main` commit is the only editable constitutional source.
+Use the `wpai-constitution` skill or the verified generated mirror and freeze
+one source SHA per invocation. This file contains no independent law.
 
-Binding constitution: **[AGENTS.md](AGENTS.md)** in this project (pointer) → universal **AGENTS Constitution** pack.
-
-Do not restore full SOUL text here. Evolve law only via the pack (complete file replacements + VERSION bump + verify-pack).
+Project-specific instructions begin at [AGENTS.md](AGENTS.md).
