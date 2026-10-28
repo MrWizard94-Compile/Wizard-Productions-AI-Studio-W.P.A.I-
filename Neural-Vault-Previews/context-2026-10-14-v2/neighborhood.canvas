@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "snapshot-meta",
+      "type": "text",
+      "x": -280,
+      "y": -420,
+      "width": 560,
+      "height": 180,
+      "text": "# WPAI Neural Vault\nSnapshot: 56cc4746cbf6fd2b\nObserved: 2026-10-14T15:49:58.172Z\nAuthored links are blue; inferred relations are purple. This is a read-only snapshot, not a live view.",
+      "color": "#162d24"
+    },
+    {
+      "id": "node-d2bda1b250542e168abf",
+      "type": "file",
+      "x": -150,
+      "y": -725,
+      "width": 300,
+      "height": 210,
+      "file": ".agents/AGENTS.md",
+      "color": "#2778c4"
+    },
+    {
+      "id": "node-369d38c7cf606e48747c",
+      "type": "file",
+      "x": 440,
+      "y": -297,
+      "width": 300,
+      "height": 210,
+      "file": "Gaming/Games/Chronos Nexus/docs/DEVELOPMENT-ONBOARDING.md",
+      "color": "#2778c4"
+    },
+    {
+      "id": "node-dd1dd3990a60843f0bde",
+      "type": "file",
+      "x": 214,
+      "y": 397,
+      "width": 300,
+      "height": 210,
+      "file": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Cageborn/AGENTS.md",
+      "color": "#2778c4"
+    },
+    {
+      "id": "node-d00f9d333a1c48680b65",
+      "type": "file",
+      "x": -514,
+      "y": 397,
+      "width": 300,
+      "height": 210,
+      "file": "Gaming/Minecraft/Mods-1.21.1-NeoForge/MicroTerrain/AGENTS.md",
+      "color": "#2778c4"
+    },
+    {
+      "id": "node-3fa313ec0541dfc576fd",
+      "type": "file",
+      "x": -740,
+      "y": -297,
+      "width": 300,
+      "height": 210,
+      "file": "docs/portfolio/README.md",
+      "color": "#2778c4"
+    },
+    {
+      "id": "node-ef1e77a538815a8c0b2a",
+      "type": "file",
+      "x": -190,
+      "y": -110,
+      "width": 380,
+      "height": 220,
+      "file": "WPAI-CONTEXT.md",
+      "color": "#00b96b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-e1",
+      "fromNode": "node-d2bda1b250542e168abf",
+      "toNode": "node-ef1e77a538815a8c0b2a",
+      "color": "#2778c4",
+      "label": "markdown (authored)"
+    },
+    {
+      "id": "edge-e2",
+      "fromNode": "node-369d38c7cf606e48747c",
+      "toNode": "node-ef1e77a538815a8c0b2a",
+      "color": "#2778c4",
+      "label": "markdown (authored)"
+    },
+    {
+      "id": "edge-e3",
+      "fromNode": "node-dd1dd3990a60843f0bde",
+      "toNode": "node-ef1e77a538815a8c0b2a",
+      "color": "#2778c4",
+      "label": "markdown (authored)"
+    },
+    {
+      "id": "edge-e4",
+      "fromNode": "node-d00f9d333a1c48680b65",
+      "toNode": "node-ef1e77a538815a8c0b2a",
+      "color": "#2778c4",
+      "label": "markdown (authored)"
+    },
+    {
+      "id": "edge-e5",
+      "fromNode": "node-3fa313ec0541dfc576fd",
+      "toNode": "node-ef1e77a538815a8c0b2a",
+      "color": "#2778c4",
+      "label": "markdown (authored)"
+    }
+  ]
+}

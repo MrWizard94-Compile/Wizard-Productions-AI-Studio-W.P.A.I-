@@ -7,7 +7,7 @@
 
 ## AutomationLab
 **Path:** `C:\WPAI\AI-Research\AutomationLab\`  
-**Has .git** · AGENTS Constitution pack bound (Level 4 pointer, pack path `../../../AGENTS Constitution/`)  
+**Governance routing corrected 2026-10-18:** Use AutomationLab's project entry and the canonical [WPAI Constitution](https://github.com/MrWizard94-Compile/Agents-Constitution) through `wpai-constitution`. The former local-pack binding is historical, not current authority. Other catalog observations remain dated evidence.  
 **Discovered via:** Obsidian vault stats — held the most cross-linked notes in the empire (9 inlinks each on Orchestrator and EXECUTOR.md).
 
 AutomationLab is the **conceptual origin and living specification** for the JanusPrime execution architecture, scoped specifically to the Astral Sorcery port project. It contains two sub-projects with distinct purposes.

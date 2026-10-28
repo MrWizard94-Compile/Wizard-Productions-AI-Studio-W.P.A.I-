@@ -1,0 +1,2452 @@
+{
+  "schema_version": 1,
+  "observed_at_utc": "2026-09-09T07:08:19.985251+00:00",
+  "root": "C:\\WPAI",
+  "priority": "Software products first (director, 2026-09-08)",
+  "method": "Registry union named direct project containers; source fingerprints and owned Git metadata only",
+  "limits": [
+    "No project build, runtime, deployment, commercial status, or artistic quality is certified",
+    "No recursive vendor, reference, archive, credential, model, or runtime-content scan",
+    "Nested components belong to their listed project; unnamed folders remain candidates"
+  ],
+  "registry_source": {
+    "path": "PROJECT-REGISTRY.md",
+    "bytes": 6014,
+    "sha256": "f881975f1ac5cc1fb532fc7ecda4c5581825cabb5cbb196201a30700f144ddc1"
+  },
+  "containers": [
+    "Software",
+    "AI-Research",
+    "Gaming/Games",
+    "Gaming/Minecraft/Mods-1.20.1-Forge",
+    "Gaming/Minecraft/Mods-1.21.1-NeoForge",
+    "Gaming/Minecraft/Modpacks",
+    "Gaming/Minecraft/Mods-1.20.1-Forge/SteampunkFactory"
+  ],
+  "excluded": [
+    {
+      "path": "Software/.claude",
+      "reason": "agent-state-or-container"
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/SteampunkFactory",
+      "reason": "agent-state-or-container"
+    }
+  ],
+  "errors": [],
+  "records": [
+    {
+      "path": "AI-Research/AssetConverter",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "4095074681176869df122baa7d5e9913847299c8",
+        "branch": "main",
+        "changed_entries": 15382,
+        "untracked_entries": 8586,
+        "worktree_count": 1
+      },
+      "root_file_count": 15,
+      "sources": [
+        {
+          "path": "AI-Research/AssetConverter/AGENTS.md",
+          "bytes": 1652,
+          "sha256": "f28ef0ec2f46f8edb75e6149a943c1272b42f7d34538906766a1eb1eec88109d"
+        },
+        {
+          "path": "AI-Research/AssetConverter/CLAUDE.md",
+          "bytes": 539,
+          "sha256": "c87e69c8a8740a554e769a6260ba5ab6d483975ed06c78590e6ae7d3296384e2"
+        },
+        {
+          "path": "AI-Research/AssetConverter/README.md",
+          "bytes": 7498,
+          "sha256": "97c0e15bc77540d95eadd211fd25038bc41becf41d9d1c8a7aeff7e6f1bf7b72"
+        }
+      ],
+      "test_entry_paths": [
+        "AI-Research/AssetConverter/scripts"
+      ]
+    },
+    {
+      "path": "AI-Research/AutomationLab",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "cbc93e63fda69bd30ee5fec3591e51d7b49984ac",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "AI-Research/Claude_Playground",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "da865435ca489135e94f77c0c08d18506ef76a4e",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 3,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "AI-Research/deep_research_engine",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "827efe66cd68451aaf622d44eef32d6daf1b4fd1",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 17,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "AI-Research/Grok_Playground",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "6f0422bc3ba50650a8b51f4d147a422cf944e710",
+        "branch": "master",
+        "changed_entries": 259,
+        "untracked_entries": 245,
+        "worktree_count": 1
+      },
+      "root_file_count": 4,
+      "sources": [
+        {
+          "path": "AI-Research/Grok_Playground/README.md",
+          "bytes": 2577,
+          "sha256": "ef7fc7666e5746325e26e2603faabaad017782ed26053fe85bec6ac451bd8cde"
+        }
+      ],
+      "test_entry_paths": [
+        "AI-Research/Grok_Playground/tests",
+        "AI-Research/Grok_Playground/Tests"
+      ]
+    },
+    {
+      "path": "AI-Research/Janus",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "5979ae55282a4f4cc409a921d387ac7ce6b52da4",
+        "branch": "improve/wpai-bridge-v2",
+        "changed_entries": 71,
+        "untracked_entries": 34,
+        "worktree_count": 1
+      },
+      "root_file_count": 17,
+      "sources": [
+        {
+          "path": "AI-Research/Janus/AGENTS.md",
+          "bytes": 3320,
+          "sha256": "a57272122e3a493f36dfadf0acb54060a377a5b3a472a4cf8902f43b0d54a4cd"
+        },
+        {
+          "path": "AI-Research/Janus/CLAUDE.md",
+          "bytes": 539,
+          "sha256": "c87e69c8a8740a554e769a6260ba5ab6d483975ed06c78590e6ae7d3296384e2"
+        },
+        {
+          "path": "AI-Research/Janus/package.json",
+          "bytes": 780,
+          "sha256": "0712a5b40f68a9ff4977e998ceefc0c14fa9f11a764d869730e844b321c46ee5"
+        },
+        {
+          "path": "AI-Research/Janus/README.md",
+          "bytes": 4281,
+          "sha256": "c0d260b7420b9865bf20ad2be7a6676c0879ebb252a181b9dd5f9332246b9fbf"
+        }
+      ],
+      "test_entry_paths": [
+        "AI-Research/Janus/scripts"
+      ],
+      "package_version": "1.0.0",
+      "declared_checks": [
+        "assets:setup",
+        "build",
+        "janus",
+        "lint",
+        "memory:down",
+        "memory:logs",
+        "memory:up",
+        "test",
+        "typecheck"
+      ]
+    },
+    {
+      "path": "AI-Research/Operation-Pinky and the Brain",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "fcc2571cb7126706717b2e15f53f0ea6f931eda2",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "AI-Research/Recurrsive",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "38c779bc2ca1d8bae78034d9680f345bd6d3d58c",
+        "branch": "main",
+        "changed_entries": 10,
+        "untracked_entries": 7,
+        "worktree_count": 1
+      },
+      "root_file_count": 44,
+      "sources": [
+        {
+          "path": "AI-Research/Recurrsive/AGENTS.md",
+          "bytes": 1648,
+          "sha256": "effb43217493d756339d9d5ab3968586dde4b5d7b04bd7092a278bc1f0511c3b"
+        },
+        {
+          "path": "AI-Research/Recurrsive/README.md",
+          "bytes": 10279,
+          "sha256": "be35ccb7ccebd2dc86e0d76073fbbc4d4a37547190658db24ebd9df26abadf2b"
+        },
+        {
+          "path": "AI-Research/Recurrsive/requirements.txt",
+          "bytes": 834,
+          "sha256": "53e2de05b5c757a9d46d97f42d1cd1d28031070990622d858794dda151f93f7f"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "AI-Research/REL_Codex_Variant",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "33d7da520505e8cd3bb05af72f626578bb5d4591",
+        "branch": "main",
+        "changed_entries": 3,
+        "untracked_entries": 3,
+        "worktree_count": 1
+      },
+      "root_file_count": 54,
+      "sources": [
+        {
+          "path": "AI-Research/REL_Codex_Variant/AGENTS.md",
+          "bytes": 1655,
+          "sha256": "6f516fa84c9c80d9b7d78d9c0d9b9a33b351ce06935cc9bb456619d9b986e9fb"
+        },
+        {
+          "path": "AI-Research/REL_Codex_Variant/package-lock.json",
+          "bytes": 96,
+          "sha256": "35404c3ae4d8c2d005f3fb26ee24f58a84d29dd5d1dde69fed744cc5878a3100"
+        },
+        {
+          "path": "AI-Research/REL_Codex_Variant/pyproject.toml",
+          "bytes": 5710,
+          "sha256": "e58fe82cf3ac88567e7c92b31aaf784237cebcba7f93bb4eea9dc5b5733528f1"
+        },
+        {
+          "path": "AI-Research/REL_Codex_Variant/README.md",
+          "bytes": 4068,
+          "sha256": "e325010b10411b44de28f3f076694487acfb7890c8fe0932846dc6aae708595f"
+        },
+        {
+          "path": "AI-Research/REL_Codex_Variant/requirements.txt",
+          "bytes": 341,
+          "sha256": "44eb8018d9015ab2464ef60e09d9794fc6ecd907952105f09cf93362bbc980ad"
+        }
+      ],
+      "test_entry_paths": [
+        "AI-Research/REL_Codex_Variant/tests",
+        "AI-Research/REL_Codex_Variant/Tests"
+      ]
+    },
+    {
+      "path": "AI-Research/research_crawler",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "c1e7e6c975d6047965c7f591a73d673b51c37fb2",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 7,
+      "sources": [
+        {
+          "path": "AI-Research/research_crawler/AGENTS.md",
+          "bytes": 1654,
+          "sha256": "3bff8908b0a523f0470e4bc88506f80e2189fd53ba70af01f1ec2c4819ca8098"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "AI-Research/Smart Library",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "ddffc06d7fec1779309786ef349d9b734d5f2d56",
+        "branch": "master",
+        "changed_entries": 11,
+        "untracked_entries": 5,
+        "worktree_count": 1
+      },
+      "root_file_count": 11,
+      "sources": [
+        {
+          "path": "AI-Research/Smart Library/AGENTS.md",
+          "bytes": 1651,
+          "sha256": "ae1118a95bc6e6db6907882bef23c18ff7b58a975491c97a60ea859ac6e7814f"
+        },
+        {
+          "path": "AI-Research/Smart Library/README.txt",
+          "bytes": 322,
+          "sha256": "b24f51b0d22d8e0d3e2d4b5b0d7a5487db408fb4a1b192bcd76472f2f0b603eb"
+        }
+      ],
+      "test_entry_paths": [
+        "AI-Research/Smart Library/tests",
+        "AI-Research/Smart Library/Tests",
+        "AI-Research/Smart Library/scripts"
+      ]
+    },
+    {
+      "path": "AI-Research/Topological Hydro-Computational Engine",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "b96b03358873ed711ebdc4a6c90cd7abecc77f66",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 68,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "AI-Research/TSAM",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "b2e6633ab666c46b748602546d9f7d73af24ef19",
+        "branch": "main",
+        "changed_entries": 10,
+        "untracked_entries": 3,
+        "worktree_count": 1
+      },
+      "root_file_count": 11,
+      "sources": [
+        {
+          "path": "AI-Research/TSAM/AGENTS.md",
+          "bytes": 1642,
+          "sha256": "87dd5861b48ef5d1042dadb560f7ea9b3b40b66330aae8e278938627f7980058"
+        },
+        {
+          "path": "AI-Research/TSAM/pyproject.toml",
+          "bytes": 384,
+          "sha256": "927329e50a9143387a14fc805a63834b3e1cef2cffd8b16e08d0e4ee73925d1d"
+        }
+      ],
+      "test_entry_paths": [
+        "AI-Research/TSAM/tests",
+        "AI-Research/TSAM/Tests"
+      ]
+    },
+    {
+      "path": "AI-Research/VeriForge",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "bcaa028a6de5d6239a8799e5e774de9b60f85667",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 4,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Brand",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 5,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Games/Cinderforge",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "missing"
+    },
+    {
+      "path": "Games/cinderforge-(4.3)",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "missing"
+    },
+    {
+      "path": "Gaming/Games/Chronos Nexus",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 7,
+      "sources": [
+        {
+          "path": "Gaming/Games/Chronos Nexus/AGENTS.md",
+          "bytes": 2677,
+          "sha256": "c8d45fd1b7493628dc7a7cd993b398ed7cd5b0dd801dcd58f78c0df408ff208c"
+        },
+        {
+          "path": "Gaming/Games/Chronos Nexus/DESIGN.md",
+          "bytes": 24218,
+          "sha256": "20df61f2ba29c0ff71127d23f322b1ce03af98af7963ab88d517ce388a17abb4"
+        },
+        {
+          "path": "Gaming/Games/Chronos Nexus/MANIFEST.md",
+          "bytes": 8413,
+          "sha256": "099e4c51095fac6f5d9028d695089c7c0a3c249ecaf1a024e3c00f0cbf679408"
+        },
+        {
+          "path": "Gaming/Games/Chronos Nexus/package-lock.json",
+          "bytes": 268,
+          "sha256": "4bba007f949f8722371c468d1528295364bc3fc403bcd8e5808248f591c68130"
+        },
+        {
+          "path": "Gaming/Games/Chronos Nexus/package.json",
+          "bytes": 359,
+          "sha256": "88929758728828b3f054fac47f73d0f57ea78c594b067a93912f926b299ea732"
+        },
+        {
+          "path": "Gaming/Games/Chronos Nexus/README.md",
+          "bytes": 7391,
+          "sha256": "d1f9de605caf41b53e016e75ffccc9cf2789c0407484b871510860c95d1c3acb"
+        }
+      ],
+      "test_entry_paths": [
+        "Gaming/Games/Chronos Nexus/test"
+      ],
+      "package_version": "3.3.0",
+      "declared_checks": [
+        "start",
+        "test"
+      ]
+    },
+    {
+      "path": "Gaming/Games/Cinderforge",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "38a1009ab26326ded29a36bce6dc673a3407e2c8",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 7,
+      "sources": [
+        {
+          "path": "Gaming/Games/Cinderforge/README.md",
+          "bytes": 2092,
+          "sha256": "726cf1efce64a6ce05ca411280a4bd3991dad118bc6a138f66e2dc857be7191f"
+        }
+      ],
+      "test_entry_paths": [
+        "Gaming/Games/Cinderforge/scripts"
+      ]
+    },
+    {
+      "path": "Gaming/Games/cinderforge-(4.3)",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "acfeaeb561379b77646438bad697723c798d5039",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 7,
+      "sources": [
+        {
+          "path": "Gaming/Games/cinderforge-(4.3)/README.md",
+          "bytes": 2104,
+          "sha256": "0a9dc972a53ba36f4451020673c5414fbe9c91b0ad571d92683e2eb45dd72311"
+        }
+      ],
+      "test_entry_paths": [
+        "Gaming/Games/cinderforge-(4.3)/scripts"
+      ]
+    },
+    {
+      "path": "Gaming/Games/RustMC",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "42c28874b71907b09a14c531100db6cb22f17528",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 6,
+      "sources": [
+        {
+          "path": "Gaming/Games/RustMC/AGENTS.md",
+          "bytes": 2413,
+          "sha256": "4cbfc1828f0c2935a5e2fe23fc80d0c6935ddda9c83ad34fce6c2b70d47f6699"
+        },
+        {
+          "path": "Gaming/Games/RustMC/Cargo.lock",
+          "bytes": 3295,
+          "sha256": "1d14dec5faa9216ef1c9ca985942a3f4927a266965a7fb98dc1eab42149da2d0"
+        },
+        {
+          "path": "Gaming/Games/RustMC/Cargo.toml",
+          "bytes": 136,
+          "sha256": "a77a717a0154a1f0f664345e9b84b203c2a58b21042a64b01a8fcae2f6f6e950"
+        },
+        {
+          "path": "Gaming/Games/RustMC/README.md",
+          "bytes": 2099,
+          "sha256": "b0f4d61e772867343218c616877db050bc9d634ab6267cfa1d49e7686d59851c"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/ATM_Fix",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 0,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/mod-test-suite",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "a6cde695748cbdc5589cb8328f35518d4e4e8428",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 10,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/mod-test-suite/README.md",
+          "bytes": 3703,
+          "sha256": "65133275836fc6a1962d1b5bf6f203cb2aba16d7f04f3516d2b6a970f3ca65fc"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Modpacks/Aethelgard-Grand-Synthesis",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "dd97e2fe1e281fc20ec74d288fc41b945a1e92bf",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Modpacks/Aethelgard-Grand-Synthesis/README.md",
+          "bytes": 2042,
+          "sha256": "95140523746c233cfef955ebd2bfc129c574188191568b1384ed3943c2ed0a07"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Modpacks/Aetheria-Nexus-of-Epochs",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "07c79efaa93121214651644a44ae0edc6156a872",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Modpacks/Aetheria-Nexus-of-Epochs/README.md",
+          "bytes": 2055,
+          "sha256": "a0c966a497ca36ff687c73a167e99ccb81eaa1ed9ca5b57ff1d3360aa2cb277c"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Modpacks/Aetherial-Convergence",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "7b04102ca1254915821c77c95fbe47e127e6fad3",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Modpacks/Aetherial-Convergence/README.md",
+          "bytes": 2001,
+          "sha256": "68baa5b0c3e8a85bbe742e055df75fd6c551837edc6f105fca816264125f6265"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Modpacks/Chronicles-Shattered-Cosmos",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "afe4ea3de9db709284a5bee94536cf25eef05fde",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Modpacks/Chronicles-Shattered-Cosmos/README.md",
+          "bytes": 2022,
+          "sha256": "ba94d8c722543fdb47d8914f3e5c8a650adb7e1ac3652bae6c356d0836811dcd"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Modpacks/Omni32-Modpack",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "9d99727a7c98eaacd57a2d884476379455278322",
+        "branch": "main",
+        "changed_entries": 2,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 3,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Modpacks/Omni32-Modpack/README.md",
+          "bytes": 1773,
+          "sha256": "c7f4dc41adddef6f022786ea64e30e9c2157e41eed537fab986ed9c79b91da18"
+        }
+      ],
+      "test_entry_paths": [
+        "Gaming/Minecraft/Modpacks/Omni32-Modpack/scripts"
+      ]
+    },
+    {
+      "path": "Gaming/Minecraft/Modpacks/Omniverse-Odyssey",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "9221e50d3a06a6f189921e74f61af01be128a4dd",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Modpacks/Omniverse-Odyssey/README.md",
+          "bytes": 2298,
+          "sha256": "521afdba040e578d960a0547f5aee1fbca6b84c0ca559a9025759b50815283ab"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Astral_Sorcery_Port",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "338c6ed9b4c1177d45ac3d6c09939c120262be25",
+        "branch": "main",
+        "changed_entries": 45,
+        "untracked_entries": 44,
+        "worktree_count": 1
+      },
+      "root_file_count": 13,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Astral_Sorcery_Port/AGENTS.md",
+          "bytes": 1747,
+          "sha256": "75d95eda28138013ed1d4a21268fa2e4fc8c84eb5a6681b2bb18764bf24bfd6f"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Astral_Sorcery_Port/build.gradle",
+          "bytes": 8349,
+          "sha256": "dfe3a178e0371aa4334606e0f9ca5f81e7980422cc543812fad0acb2cb7db24a"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Astral_Sorcery_Port/gradle.properties",
+          "bytes": 131,
+          "sha256": "ea871f4c209d62613d0dc6d223bb60dd04525c94cdb9d129c55b94dda68de50e"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Astral_Sorcery_Port/README.md",
+          "bytes": 3357,
+          "sha256": "02b2e80ee14b1eb969225a8ed0b0f68765a565dece29d7351aea48eed03cfb41"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Big Little Fixes",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "250b6713c1d497f7d8218be2db178eca73a84513",
+        "branch": "main",
+        "changed_entries": 27,
+        "untracked_entries": 17,
+        "worktree_count": 1
+      },
+      "root_file_count": 11,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Big Little Fixes/AGENTS.md",
+          "bytes": 1744,
+          "sha256": "e485897935cbbc508dc4dc1c8c6caf31bbc8997a96d70cde32ce5ac0eea2f9b0"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Big Little Fixes/build.gradle",
+          "bytes": 11906,
+          "sha256": "2fd00c5dfabd6d8323915f0f3e2accf815518ff7921813c0413273faf18e2147"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Big Little Fixes/gradle.properties",
+          "bytes": 3465,
+          "sha256": "4bf8fcab683c433d78a9d39c7be1a6fac287c3e8490900b0f49fa11ee43bc52f"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Big Little Fixes/README.md",
+          "bytes": 1599,
+          "sha256": "db5c2288edbc0d74bc158027cb7de39cf2f55d0d01231b5247ec3699947a7730"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Node Core",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "815870899938762073a91f38ef8d9a9466cea280",
+        "branch": "main",
+        "changed_entries": 59,
+        "untracked_entries": 35,
+        "worktree_count": 1
+      },
+      "root_file_count": 10,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Node Core/build.gradle",
+          "bytes": 3124,
+          "sha256": "fc0b7a77c07e10b87db859041a57570f9648c1e2a3f6a83897fe5bc4ed2d4357"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Node Core/gradle.properties",
+          "bytes": 544,
+          "sha256": "8e885010abc1adcdfe6d147b472312daeb84c5f241c83e76eb54435b000ad228"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Node Core/README.md",
+          "bytes": 4040,
+          "sha256": "b21b736fba2ed6ed57b011bf54eed2a3c54b297a6b6a6642b312427138aff02f"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/OmniFix",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "0d15cf086829aa0a9e2b8a851f8187c0eac1b5da",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 18,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/OmniFix/AGENTS.md",
+          "bytes": 1735,
+          "sha256": "9fa53da32804d6b2f52c6d613522d378246dcc07de03330c767ea18f01023c75"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/OmniFix/build.gradle.kts",
+          "bytes": 26,
+          "sha256": "ab327f3007136abdff7f730cb1c2de26c096e61c2558e65900eb088f8b883559"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/OmniFix/gradle.properties",
+          "bytes": 636,
+          "sha256": "c6305cbba93392c5deb00489433826dacd0102eb5e6d46daf5f2c5c006d6fdef"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/SteampunkFactory/steampunk_factory_mod",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "9983621a37e8342f0627206a52c8c3da9ef753b9",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 7,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/SteampunkFactory/steampunk_factory_mod/build.gradle",
+          "bytes": 1563,
+          "sha256": "fbcb4c8e85f34ae2363993d18993f595448d2190080e566ef51d8d3e77eb5c2a"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/SteampunkFactory/steampunk_factory_mod/gradle.properties",
+          "bytes": 49,
+          "sha256": "ba81a468a82ac04b13fef62c51b69e9f89015cbfb43d9a4eb6c538a063c725eb"
+        }
+      ],
+      "test_entry_paths": [
+        "Gaming/Minecraft/Mods-1.20.1-Forge/SteampunkFactory/steampunk_factory_mod/scripts"
+      ]
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/SteampunkFactory/steampunk_factory_rp",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "6651a76f66473fab4a133b9a3b8f4e403d93d4d6",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 3,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Valkyrien Portals",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "6dcfbb4f51f2f9e4c93c9ba8df175d5a21df467c",
+        "branch": "main",
+        "changed_entries": 17,
+        "untracked_entries": 10,
+        "worktree_count": 1
+      },
+      "root_file_count": 18,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Valkyrien Portals/AGENTS.md",
+          "bytes": 1745,
+          "sha256": "704606696194cd7f4266dee94b110cd320f0adc571e017ff0a51f26d0a6bfdd5"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Valkyrien Portals/build.gradle",
+          "bytes": 12331,
+          "sha256": "2334d91302a14345c02a78c56bf7e0d3015abc92abf649d7464018b1accda7b8"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Valkyrien Portals/gradle.properties",
+          "bytes": 3470,
+          "sha256": "1b03c1df543ce317f2796ae140361640624651528808e42b4b70f9cb19812bc3"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/Valkyrien Portals/README.txt",
+          "bytes": 2184,
+          "sha256": "a57fbf6a97775ceee096147a3c93166746dcdc95adc88b571fa827fc9c3940f3"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.20.1-Forge/VS2 Ship Systems",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "12976d76354e4054dc35d7b1afbfd0cfb71656d5",
+        "branch": "main",
+        "changed_entries": 19,
+        "untracked_entries": 6,
+        "worktree_count": 1
+      },
+      "root_file_count": 12,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/VS2 Ship Systems/AGENTS.md",
+          "bytes": 1744,
+          "sha256": "0f086659928ebc18e08b5f6ce6a5ec2121338c862a69b4e397aafb5c6e92f7a5"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/VS2 Ship Systems/build.gradle",
+          "bytes": 11937,
+          "sha256": "7bbef757753bb0d8bd2693ea93c35ed2d794b1cfc2cd1c08e250d9d163d2fd93"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/VS2 Ship Systems/gradle.properties",
+          "bytes": 2626,
+          "sha256": "7a8769f7fd09618f96f8a4e2a9a1636b15d87739505c66fdd36689aa09c5db46"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.20.1-Forge/VS2 Ship Systems/README.md",
+          "bytes": 9120,
+          "sha256": "74442b9867efba59211aa407ef6dd154aa72874d8c9b44c98b9a03de599b9a8b"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Adaptive Attacks",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "6129d1daacd02986f5045d03dd76b96874f05ecc",
+        "branch": "main",
+        "changed_entries": 8,
+        "untracked_entries": 3,
+        "worktree_count": 1
+      },
+      "root_file_count": 7,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Adaptive Attacks/build.gradle",
+          "bytes": 6060,
+          "sha256": "2dad00bb75d3b3156b32d38d5a08b2f2ce04c93a84ab56de5ccca7d013b20979"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Adaptive Attacks/gradle.properties",
+          "bytes": 180,
+          "sha256": "0834e4bad97998bf967c7ddfa7ae9cf99a917c312587daebd123733ab999d667"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Adaptive Bosses",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "1d2c78b92cdb2b9d6ccb92d289abc97a5db3813a",
+        "branch": "main",
+        "changed_entries": 5,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 8,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Adaptive Bosses/build.gradle",
+          "bytes": 7915,
+          "sha256": "1841cb47af1bbb78090d7cd9f74f35f376cf39540f7a9539262feb62e9bd1b89"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Adaptive Bosses/gradle.properties",
+          "bytes": 174,
+          "sha256": "707c329ed598b518fbfab86a66ec22b50d1f74159db3cb9533b1b37cc0304231"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Living_Villages",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "278168a64079b958d87867a3c3bc9db9af07d95f",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 8,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Living_Villages/build.gradle.kts",
+          "bytes": 2427,
+          "sha256": "812e08c35296e4ee8bf70f622f56253f2a9f075924470796cc7b1c1e34592b0a"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Living_Villages/gradle.properties",
+          "bytes": 486,
+          "sha256": "95dc012f1f2a19a731f2cef93dc4afc68b37413302cf8fdf5ee499d27f48617e"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/New folder",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "7d8eb01d70ae7ebd45f42bf5d930c1f6e3fa2104",
+        "branch": "master",
+        "changed_entries": 23,
+        "untracked_entries": 3,
+        "worktree_count": 1
+      },
+      "root_file_count": 10,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/New folder/AGENTS.md",
+          "bytes": 2104,
+          "sha256": "9e19e6c7a038183b7e87d172ad1d78a04f7e916519cb591ba0b53d633af3311d"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/New folder/build.gradle",
+          "bytes": 3985,
+          "sha256": "075d1a8d3876630b86e6d809f61995769bffb5abc337b8bc3d97a122837d4282"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/New folder/gradle.properties",
+          "bytes": 268,
+          "sha256": "db564320eef3aba1447df0fe27ff0c72ecb101f7ce9a0d8a4b9cf405ccccf91d"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/New folder/MANIFEST.md",
+          "bytes": 2509,
+          "sha256": "1300f6540fe899b1078f8a4dd9924d8bc9721924f50a994c9ebd694ac7967165"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/New folder/README.md",
+          "bytes": 2408,
+          "sha256": "103ffc90dbcbdac4d1d0dd8ee32b91b8fee1ca5640fcdde968fa9c7fb84631c2"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/OmniFix NeoForge",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "afa160d7e90990eb0042d57f479c96eb86cf24a6",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 15,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/OmniFix NeoForge/AGENTS.md",
+          "bytes": 2542,
+          "sha256": "df6d3910ee51effb6f20422ed958f30359eabc3a7ee05689342f721aea3e737b"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/OmniFix NeoForge/build.gradle",
+          "bytes": 856,
+          "sha256": "380b35b9e8dd8bdf4b06a54ed5e3c7b1b87c71ec91c7eba01eaf9b5faf327ee9"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/OmniFix NeoForge/DELIVERY-REPORT.md",
+          "bytes": 3897,
+          "sha256": "d9d02ae6c4f15ef695398d7be25cfb15d69f8fd40ae8b7258727d500864e7f86"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/OmniFix NeoForge/gradle.properties",
+          "bytes": 187,
+          "sha256": "30e88da623b550bbc209a90d768d1459566eda7bcc0ebdca3032313c50dd55a0"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/OmniFix NeoForge/MANIFEST.md",
+          "bytes": 3387,
+          "sha256": "b295cc127dd8639ee669379408005ea2b82fb96c6e210a243f57b69f0dbb6e8b"
+        },
+        {
+          "path": "Gaming/Minecraft/Mods-1.21.1-NeoForge/OmniFix NeoForge/README.md",
+          "bytes": 4577,
+          "sha256": "d8ee4759998dae9535d0f439037074b4aaef433a39bf84c74e0292e8d957ab8c"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Gaming/Minecraft/Omni_Framework",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "ee1ee7afa2864793a7046c8d459025562b13b5a1",
+        "branch": "main",
+        "changed_entries": 102,
+        "untracked_entries": 42,
+        "worktree_count": 1
+      },
+      "root_file_count": 15,
+      "sources": [
+        {
+          "path": "Gaming/Minecraft/Omni_Framework/AGENTS.md",
+          "bytes": 1672,
+          "sha256": "49cecbbc82de9b48e445903a2520b75bccdafa48a53a25353fd44c012e24fd82"
+        },
+        {
+          "path": "Gaming/Minecraft/Omni_Framework/Cargo.lock",
+          "bytes": 129941,
+          "sha256": "60f8199aa00c50861ce057378517bda82e5ec32e06dacb35a7bf030f8a70e8fa"
+        },
+        {
+          "path": "Gaming/Minecraft/Omni_Framework/Cargo.toml",
+          "bytes": 3610,
+          "sha256": "798bc46b99a88183c1f02606d1ebe0d6fddbfa3210788c5072b929c2cf70bd3d"
+        },
+        {
+          "path": "Gaming/Minecraft/Omni_Framework/CLAUDE.md",
+          "bytes": 481,
+          "sha256": "d6cf5c9956f7ffa47af09d92c97d1bcd62de249e304f86d509156a67033b143f"
+        },
+        {
+          "path": "Gaming/Minecraft/Omni_Framework/README.md",
+          "bytes": 3987,
+          "sha256": "3bcaca5b12577d25591cf1fd1c1c5e5fc144ac3ca4e651ec432c12a648cdaa71"
+        }
+      ],
+      "test_entry_paths": [
+        "Gaming/Minecraft/Omni_Framework/scripts"
+      ]
+    },
+    {
+      "path": "Gaming/TerraBlock",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "e3e2e825f71fa3fdac4d7d3194a6fdbb5920358e",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 17,
+      "sources": [
+        {
+          "path": "Gaming/TerraBlock/AGENTS.md",
+          "bytes": 1648,
+          "sha256": "81b0120444b2ca0b772852eb65dd1de1481f37313c04d84d6c1c36a0f9c41d81"
+        },
+        {
+          "path": "Gaming/TerraBlock/MANIFEST.md",
+          "bytes": 1105,
+          "sha256": "05dee28b323f88646ad822068c72cfc59ba7258d3ef222c2aec7c084321003f1"
+        },
+        {
+          "path": "Gaming/TerraBlock/package-lock.json",
+          "bytes": 232416,
+          "sha256": "18661a365364dfa1f39ce6312cd104c3469e1216605c22ecfc93fe0037afeae5"
+        },
+        {
+          "path": "Gaming/TerraBlock/package.json",
+          "bytes": 2358,
+          "sha256": "74142f81a4c7290d31b1d82e5e18b3edd9146bd55d208e18507c73d93903d7a5"
+        },
+        {
+          "path": "Gaming/TerraBlock/README.md",
+          "bytes": 2633,
+          "sha256": "f5fd1894135a49a8a82a94be7a779a1a883efd238c48dafdbf4b1931a9ea7730"
+        }
+      ],
+      "test_entry_paths": [
+        "Gaming/TerraBlock/tests",
+        "Gaming/TerraBlock/Tests",
+        "Gaming/TerraBlock/scripts"
+      ],
+      "package_version": "5.3.4",
+      "declared_checks": [
+        "build",
+        "desktop",
+        "desktop:dev",
+        "desktop:dir",
+        "desktop:pack",
+        "dev",
+        "lint",
+        "mp-server",
+        "playtest",
+        "playtest:agent",
+        "playtest:agent:headed",
+        "playtest:headed",
+        "preview",
+        "test",
+        "verify"
+      ]
+    },
+    {
+      "path": "Graphics",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 1,
+      "sources": [
+        {
+          "path": "Graphics/README.md",
+          "bytes": 692,
+          "sha256": "dead71e6c3e422bb1d5ea114f9062a8c9d3408e94201794bd9944e19fced249c"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Music",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 8,
+      "sources": [
+        {
+          "path": "Music/README.md",
+          "bytes": 795,
+          "sha256": "342e28e89686ac6e83dd0e99f0e2b122a04840d46d35e6eb9b5f200ba95a9c7a"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Quantum",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 1,
+      "sources": [
+        {
+          "path": "Quantum/README.md",
+          "bytes": 653,
+          "sha256": "54e4dd403888c426fee84e43fed7f8e966f9867d1481cd7ab6ed6eff4cd409cb"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/APODE",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "188351a1b5c0d3fc87c2da96cf55932491657bf8",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 7,
+      "sources": [
+        {
+          "path": "Software/APODE/PLAN.md",
+          "bytes": 16639,
+          "sha256": "794e97dc6bd141f9eac1d2a1ccfd6a44e150d5fbbb37d814d5e94bb6a94e669a"
+        },
+        {
+          "path": "Software/APODE/README.md",
+          "bytes": 885,
+          "sha256": "0a20b4854df449ea2bed1953d35d284e11457574c78f64a473ee6229610099a7"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/AtoZ-Grabber",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "0b6c873852e014d5be7115c42d5642da9a513f79",
+        "branch": "main",
+        "changed_entries": 1,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 10,
+      "sources": [
+        {
+          "path": "Software/AtoZ-Grabber/README.md",
+          "bytes": 5846,
+          "sha256": "dab018f763dc6be92f46b907bce711b7ef3a68102ab0348f5a551e75cb745feb"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/BitBurner Scripts",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "missing"
+    },
+    {
+      "path": "Software/Bundle.Social",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "69c9ec073336a30a785bd910554cccddd52e1152",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 2,
+      "sources": [],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/DigiChar",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "63cf4ddaa1423e64ce520642e02f78e158ffa75e",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 13,
+      "sources": [
+        {
+          "path": "Software/DigiChar/MANIFEST.md",
+          "bytes": 3154,
+          "sha256": "05e25d7e74f31ee85cfdbb511eb926f6d0129f4b996b6082179868950f8e1cae"
+        },
+        {
+          "path": "Software/DigiChar/package-lock.json",
+          "bytes": 123070,
+          "sha256": "c670778c4c1ef308938b9c9be9ea5721082928dca2c5c8b4cc91cee323d54eb0"
+        },
+        {
+          "path": "Software/DigiChar/package.json",
+          "bytes": 1114,
+          "sha256": "f748ef1246ebc883864f3be8750c7434f1c437320da86f3a325b650e265c793e"
+        },
+        {
+          "path": "Software/DigiChar/README.md",
+          "bytes": 3036,
+          "sha256": "09ba7653ffede4e0fc32cab1506d1e306d5db54e373f0959ce1f10d4651d565d"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/DigiChar/scripts"
+      ],
+      "package_version": "3.0.0",
+      "declared_checks": [
+        "build",
+        "check",
+        "desktop:build",
+        "desktop:dev",
+        "dev",
+        "lint",
+        "preview",
+        "tauri",
+        "test"
+      ]
+    },
+    {
+      "path": "Software/FUSE",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "c59bfa8fea2edcfc0eb453fa20cb40bcbb0138cd",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 15,
+      "sources": [
+        {
+          "path": "Software/FUSE/package-lock.json",
+          "bytes": 205704,
+          "sha256": "b420b8de1ca98615f9e786ba8087a93fe85aee16f0d1730c27c518a7181f7833"
+        },
+        {
+          "path": "Software/FUSE/package.json",
+          "bytes": 2288,
+          "sha256": "8c9db5a200cf62e11b9e82147a7990d6055eb97b4e382367ecc80c76c4cd7179"
+        }
+      ],
+      "test_entry_paths": [],
+      "package_version": "1.0.0",
+      "declared_checks": [
+        "build",
+        "start"
+      ]
+    },
+    {
+      "path": "Software/GitHubCodeCrawler",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "1bba4d3e524eb480ce77bdf2852c653cb31aac97",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 4,
+      "sources": [
+        {
+          "path": "Software/GitHubCodeCrawler/README.md",
+          "bytes": 3836,
+          "sha256": "5fcb108bcb087bf870ef15707db11ce89a57bd2c7b42be82fb70bb099c036da5"
+        },
+        {
+          "path": "Software/GitHubCodeCrawler/requirements.txt",
+          "bytes": 31,
+          "sha256": "83a2f84c63f1a10f7ff723f993c14ba98cab5094ef57c991f15592fe71ffc64c"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/GitHubCodeCrawler/tests",
+        "Software/GitHubCodeCrawler/Tests"
+      ]
+    },
+    {
+      "path": "Software/GrokForge",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 9,
+      "sources": [
+        {
+          "path": "Software/GrokForge/AGENTS.md",
+          "bytes": 2476,
+          "sha256": "7950fef2c700ac53f6d682fba783984e5e0405664554796ea16c94cc31243d75"
+        },
+        {
+          "path": "Software/GrokForge/MANIFEST.md",
+          "bytes": 1196,
+          "sha256": "9f51bb408fefe42bb0d6dbb0bd60c55a4f69d2dde530625d000cefb4f2f34dd4"
+        },
+        {
+          "path": "Software/GrokForge/package-lock.json",
+          "bytes": 5798,
+          "sha256": "c52192d77d14f7fa57f6dccbadeec38a9cbd420486f48aaee49427a9399ab095"
+        },
+        {
+          "path": "Software/GrokForge/package.json",
+          "bytes": 474,
+          "sha256": "481429bd93926ebf718c54c5173fafe67b82d3c4d3262c11a621db00e2434916"
+        },
+        {
+          "path": "Software/GrokForge/README.md",
+          "bytes": 3787,
+          "sha256": "19b74906f5573bff618023bb34f303274193b970563fa9a87d207ada2d612740"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/GrokForge/test",
+        "Software/GrokForge/scripts"
+      ],
+      "package_version": "1.5.0",
+      "declared_checks": [
+        "lint",
+        "smoke",
+        "start",
+        "test",
+        "typecheck"
+      ]
+    },
+    {
+      "path": "Software/GrokVerse",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 6,
+      "sources": [
+        {
+          "path": "Software/GrokVerse/AGENTS.md",
+          "bytes": 1759,
+          "sha256": "f60b4753fa55b75e059c8a460e771ead69d6c37a2a11193678a887549202fe74"
+        },
+        {
+          "path": "Software/GrokVerse/package.json",
+          "bytes": 293,
+          "sha256": "d1b4af77b0718f08987d90c2d84f73135cb81d6848060a686613f0f55e6b6aa0"
+        },
+        {
+          "path": "Software/GrokVerse/README.md",
+          "bytes": 1815,
+          "sha256": "c20013b8667c60a2910c79301e3ef32de1459aa133a1abf25deb3de2ac43b068"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/GrokVerse/tests",
+        "Software/GrokVerse/Tests"
+      ],
+      "package_version": "1.0.0",
+      "declared_checks": [
+        "assets",
+        "check",
+        "test"
+      ]
+    },
+    {
+      "path": "Software/HellForge",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "b0bbfb8b9ab986c27a8e7b8e3a4b27d687c0b028",
+        "branch": "improve/wpai-operator-v2",
+        "changed_entries": 6,
+        "untracked_entries": 6,
+        "worktree_count": 1
+      },
+      "root_file_count": 11,
+      "sources": [
+        {
+          "path": "Software/HellForge/package-lock.json",
+          "bytes": 65651,
+          "sha256": "8568c1fe92b9c032f2bef386d307b5f926c489c06e62a057c69124a11384a815"
+        },
+        {
+          "path": "Software/HellForge/package.json",
+          "bytes": 832,
+          "sha256": "deccee8722638ed0e92180ece5d549c77366f477d8019baa1b8eab1c45493074"
+        },
+        {
+          "path": "Software/HellForge/README.md",
+          "bytes": 4544,
+          "sha256": "fbca2b1161b3b52be1b73baf016e119798d11c046684f5571a944217b0bc9b65"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/HellForge/test"
+      ],
+      "package_version": "0.1.0",
+      "declared_checks": [
+        "format",
+        "format:check",
+        "lint",
+        "start",
+        "test"
+      ]
+    },
+    {
+      "path": "Software/HidoutHunter",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "missing"
+    },
+    {
+      "path": "Software/MixinFieldManual",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "b303229f645a256fa4087ae3024e3998072f9fbb",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 9,
+      "sources": [
+        {
+          "path": "Software/MixinFieldManual/LISTING.md",
+          "bytes": 4453,
+          "sha256": "60f9ec17028a211d47c926124d6b44bafda5f1acd7436ff359712abc545d16fe"
+        },
+        {
+          "path": "Software/MixinFieldManual/OUTLINE.md",
+          "bytes": 6905,
+          "sha256": "2871abeea853c41a1aaa3daa434731e82e20dab1e4d33e168e14b0ec27d0047c"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/nys-home-school-word-processor",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 4,
+      "sources": [
+        {
+          "path": "Software/nys-home-school-word-processor/MANIFEST.md",
+          "bytes": 1329,
+          "sha256": "287819113aae8f8de32be8e5ce3d22a4f98e817ae1d13ee4c74955aabba968d1"
+        },
+        {
+          "path": "Software/nys-home-school-word-processor/README.md",
+          "bytes": 3872,
+          "sha256": "45527f7717227aee4199a502e8e78d996e31ef8207320ca36741aeb9b91b8a6b"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/obsidian-mcp-server",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 8,
+      "sources": [
+        {
+          "path": "Software/obsidian-mcp-server/AGENTS.md",
+          "bytes": 2217,
+          "sha256": "ead67ca3a989bb6112dfc98575a0ad2cd38fc5ddd83faf07c51eeaadd8f3e1b3"
+        },
+        {
+          "path": "Software/obsidian-mcp-server/DELIVERY-REPORT.md",
+          "bytes": 5729,
+          "sha256": "c5eff9dc280a430d75de44755da77472b76aa0ac43ccdd751c439f10b9c3c512"
+        },
+        {
+          "path": "Software/obsidian-mcp-server/MANIFEST.md",
+          "bytes": 4851,
+          "sha256": "2fa1d74a891c6edb92670834b0952a0e83d19b114fd883daa627aa2416f08d1f"
+        },
+        {
+          "path": "Software/obsidian-mcp-server/package-lock.json",
+          "bytes": 58138,
+          "sha256": "43b5701a304b409d6871c93c5fcdb7165e2b01ccad87b7c115e67ab60e2064fd"
+        },
+        {
+          "path": "Software/obsidian-mcp-server/package.json",
+          "bytes": 579,
+          "sha256": "1da0c21b2004883b2064cb6735f8fdd90613bd31537072e958c2d96879c338c8"
+        },
+        {
+          "path": "Software/obsidian-mcp-server/README.md",
+          "bytes": 7450,
+          "sha256": "115228205a07e85a3bc0ec82618a39da9d0c457ec414ad707f8ab70e416746cf"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/obsidian-mcp-server/tests",
+        "Software/obsidian-mcp-server/Tests"
+      ],
+      "package_version": "1.2.1",
+      "declared_checks": [
+        "build",
+        "dev",
+        "start",
+        "test"
+      ]
+    },
+    {
+      "path": "Software/psyforge",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "2d0f3cab8a16002aff09347813c11a5a2e30aac6",
+        "branch": "main",
+        "changed_entries": 74,
+        "untracked_entries": 40,
+        "worktree_count": 1
+      },
+      "root_file_count": 27,
+      "sources": [
+        {
+          "path": "Software/psyforge/AGENTS.md",
+          "bytes": 2926,
+          "sha256": "5c9ebe7d988ace1490bbca44faceff43c22d2e323faea8e8731e286b65fe0ecc"
+        },
+        {
+          "path": "Software/psyforge/DESIGN.md",
+          "bytes": 3272,
+          "sha256": "98de67ba051f2fe03890b1fd08d6edfa33e581acdc92244cb2bcf8f6779d8c0a"
+        },
+        {
+          "path": "Software/psyforge/MANIFEST.md",
+          "bytes": 3939,
+          "sha256": "f9cb65e8c1a902ab422dcb48f9899a5c70b51efa956a7deafe569b3e4e777fd8"
+        },
+        {
+          "path": "Software/psyforge/package-lock.json",
+          "bytes": 108692,
+          "sha256": "49b1ac6cb160dc59630cf9a49d002d3b47455ec2d6db7323bbf55e2bced8da7c"
+        },
+        {
+          "path": "Software/psyforge/package.json",
+          "bytes": 1655,
+          "sha256": "ca56ade86c332a403ffba34ddb1a422fdf0f53d477b5449170ff88a06f1aade2"
+        },
+        {
+          "path": "Software/psyforge/README.md",
+          "bytes": 2567,
+          "sha256": "6544222469225c5b81747fabc9d3286bd68a534f5fa455f5a0952b32aa481390"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/psyforge/scripts"
+      ],
+      "package_version": "0.1.0",
+      "declared_checks": [
+        "benchmark:local",
+        "build",
+        "build:server",
+        "build:ui",
+        "dev",
+        "docs:traceability",
+        "graph:fixture",
+        "import:evidence",
+        "lint",
+        "preview",
+        "recompute:features",
+        "start:server",
+        "test",
+        "typecheck"
+      ]
+    },
+    {
+      "path": "Software/PyMason",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "1fe2ec4ec519d0c0cc818b990423dfd0e822bd27",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 20,
+      "sources": [
+        {
+          "path": "Software/PyMason/AGENTS.md",
+          "bytes": 1645,
+          "sha256": "8842c6538d394ae700122c7c1ae41c66ac5d2927423934265bdc0fef860947b1"
+        },
+        {
+          "path": "Software/PyMason/MANIFEST.md",
+          "bytes": 4934,
+          "sha256": "2c7626f41c65c39cd6f13adc4dbc211c0183d084256fd597237f8416b1a58c45"
+        },
+        {
+          "path": "Software/PyMason/package.json",
+          "bytes": 521,
+          "sha256": "86982c24623940a52858b8d5a6a626c162f457a21fb3262ea1c9da3b35370f1d"
+        },
+        {
+          "path": "Software/PyMason/README.md",
+          "bytes": 4762,
+          "sha256": "b6e920cae9b47f46269ac4d6a841b3ebd81edcaf5eb564355b62e9aa6c39a74c"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/PyMason/tests",
+        "Software/PyMason/Tests"
+      ],
+      "package_version": "1.5.0",
+      "declared_checks": [
+        "desktop",
+        "desktop:build",
+        "serve",
+        "smoke",
+        "test"
+      ]
+    },
+    {
+      "path": "Software/QuillForge",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "4334cfcee7b6bfb9df451a1de628b744c3df0359",
+        "branch": "main",
+        "changed_entries": 46,
+        "untracked_entries": 2,
+        "worktree_count": 1
+      },
+      "root_file_count": 12,
+      "sources": [
+        {
+          "path": "Software/QuillForge/AGENTS.md",
+          "bytes": 3312,
+          "sha256": "01f43c6ef6c8eef5e0c5891f9f969fab540bba0b8d36d4d53018c711ad6f9846"
+        },
+        {
+          "path": "Software/QuillForge/Cargo.lock",
+          "bytes": 94797,
+          "sha256": "27f957d9201d63e1c67d8f201500c1808e1ca83d1bc4cee6bee195b91672be9b"
+        },
+        {
+          "path": "Software/QuillForge/Cargo.toml",
+          "bytes": 2986,
+          "sha256": "624aecde3cbcd4444aa2ccbb8a88850549b161e6bd8ece626338b78d6822a538"
+        },
+        {
+          "path": "Software/QuillForge/MANIFEST.md",
+          "bytes": 2272,
+          "sha256": "c83e575347d122da830483aacbe01c197e7add3369aed7f74a365eece9649868"
+        },
+        {
+          "path": "Software/QuillForge/README.md",
+          "bytes": 6908,
+          "sha256": "512ff019c58c993d7463c883cf1d82b334f0615874378d0f3d3e7509929f0765"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/Random Story Generator",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "f91ac6c32af6679b7f9c632331a3e34129116f23",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 18,
+      "sources": [
+        {
+          "path": "Software/Random Story Generator/README.md",
+          "bytes": 4019,
+          "sha256": "b6ab65e68bba2dbc5b847236d50b43c080a481a91ace159db7931b2d5748390f"
+        },
+        {
+          "path": "Software/Random Story Generator/requirements.txt",
+          "bytes": 58,
+          "sha256": "47facfedcbf5cd038ec1a4e7f2904afc8624da099326e27f77822d212c38eb1d"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/Random Story Generator/tests",
+        "Software/Random Story Generator/Tests"
+      ]
+    },
+    {
+      "path": "Software/RepoForge",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "3734529006f5764e8cd43382cdc27e40c696c6fe",
+        "branch": "main",
+        "changed_entries": 8,
+        "untracked_entries": 3,
+        "worktree_count": 1
+      },
+      "root_file_count": 17,
+      "sources": [
+        {
+          "path": "Software/RepoForge/AGENTS.md",
+          "bytes": 1647,
+          "sha256": "7f9b1addc0db0fbcd750fb1ef612a9c3af5b46455035745eb88e8227d9cb0229"
+        },
+        {
+          "path": "Software/RepoForge/LISTING.md",
+          "bytes": 3519,
+          "sha256": "69ce2c5cc248f3d69a18935f87b6d4088265d197505751ac1095992e2d617a7a"
+        },
+        {
+          "path": "Software/RepoForge/README.md",
+          "bytes": 5248,
+          "sha256": "aff6f8f6868c4fd148eb4ebb9d4ebfd8f800b6884d04f729bb9355ea8a74882e"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/RepoForge/tests",
+        "Software/RepoForge/Tests"
+      ]
+    },
+    {
+      "path": "Software/RickPrime",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "ownership-check-rejected"
+      },
+      "root_file_count": 11,
+      "sources": [
+        {
+          "path": "Software/RickPrime/ARCHITECTURE.md",
+          "bytes": 11619,
+          "sha256": "c31fe1be41a0182acebd94ad5cb48e5d37fa45f0d49f5655326c4fec4bc6c9d6"
+        },
+        {
+          "path": "Software/RickPrime/MANIFEST.md",
+          "bytes": 4337,
+          "sha256": "2d7281cabc978a359d92dd5452a32b20ceead00886092bfe1cb24902e03a80c1"
+        },
+        {
+          "path": "Software/RickPrime/package-lock.json",
+          "bytes": 112344,
+          "sha256": "a6e86bccda2d16343611b9a9eb4cc5110c2501cfc65ab24ba96301676650cac8"
+        },
+        {
+          "path": "Software/RickPrime/package.json",
+          "bytes": 1475,
+          "sha256": "0b5e6d2783cd22122c65da005c4c1e5902cd73197332bb1b483f58d584ff2412"
+        },
+        {
+          "path": "Software/RickPrime/README.md",
+          "bytes": 6780,
+          "sha256": "5c42a2455b16171b4a6c2c322896097e23acbd3d3574ef993558832027f7df48"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/RickPrime/test"
+      ],
+      "package_version": "1.0.0",
+      "declared_checks": [
+        "build",
+        "clean",
+        "desktop",
+        "dev",
+        "dev:electron",
+        "dev:ui",
+        "dist:dir",
+        "dist:win",
+        "lint",
+        "package:win",
+        "preview",
+        "test"
+      ]
+    },
+    {
+      "path": "Software/StudioOps",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "b0f3c6898b500d16d329a102c209cadcb65df026",
+        "branch": "improve/control-plane-v2",
+        "changed_entries": 291,
+        "untracked_entries": 260,
+        "worktree_count": 1
+      },
+      "root_file_count": 8,
+      "sources": [
+        {
+          "path": "Software/StudioOps/AGENTS.md",
+          "bytes": 1647,
+          "sha256": "6134ae028cf79d3a5d98ae498ad7dfe687c88dc19c2941529fc376d208b3f6a9"
+        },
+        {
+          "path": "Software/StudioOps/README.md",
+          "bytes": 3560,
+          "sha256": "0c67346ef9efd5bca75ed78c52559f28e3596ac12a35f362f87e8fb108e26960"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/StudioOps/scripts",
+        "Software/StudioOps/cli/tests"
+      ]
+    },
+    {
+      "path": "Software/TrackForge",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "daaa6dc9f15a497d5ed578d9bc0957d105dc7ae6",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 8,
+      "sources": [
+        {
+          "path": "Software/TrackForge/AGENTS.md",
+          "bytes": 2350,
+          "sha256": "8d2a2fef9da38987f1f07b4cd30ea8fb744a8960e7671da3e7c728df0f0ff841"
+        },
+        {
+          "path": "Software/TrackForge/CMakeLists.txt",
+          "bytes": 6295,
+          "sha256": "650592a2b73003bfda545012a40c55e7bfc0dcb2b946458592f5c77368657562"
+        },
+        {
+          "path": "Software/TrackForge/MANIFEST.md",
+          "bytes": 17449,
+          "sha256": "b81b0f8094608f86df40d292a6464eb54e6e90bbc5a4b19e498cb2c5447ab745"
+        },
+        {
+          "path": "Software/TrackForge/README.md",
+          "bytes": 12016,
+          "sha256": "3122c269e0bbe0b30c3133dc8912dae3e83a6f27c38471ed1739a2073f702a77"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/TrackForge/tests",
+        "Software/TrackForge/Tests"
+      ]
+    },
+    {
+      "path": "Software/TwoTell",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "f58fafc63638541ef5c33b124bd267364e561f90",
+        "branch": "main",
+        "changed_entries": 74,
+        "untracked_entries": 34,
+        "worktree_count": 1
+      },
+      "root_file_count": 21,
+      "sources": [
+        {
+          "path": "Software/TwoTell/AGENTS.md",
+          "bytes": 2247,
+          "sha256": "11c095d45f3894c70affc3e565a619c4219e5eef407f4837ff226451ae16da57"
+        },
+        {
+          "path": "Software/TwoTell/MANIFEST.md",
+          "bytes": 77301,
+          "sha256": "c92f232679fec1569874ab578e8e9797b51c974f33ab5e38c374bf96672f60c9"
+        },
+        {
+          "path": "Software/TwoTell/package.json",
+          "bytes": 2465,
+          "sha256": "04f1a434612487b67e18f50f3a800ca6f59efbb29e34279d1001bf6692f70f6d"
+        },
+        {
+          "path": "Software/TwoTell/pnpm-lock.yaml",
+          "bytes": 358212,
+          "sha256": "b02062633de904f4af420cc5ff0c955e323fa05b8a0486947c328360b5263f12"
+        },
+        {
+          "path": "Software/TwoTell/README.md",
+          "bytes": 2846,
+          "sha256": "3c7cdf7bdd3add159c7d671c4805ec247b73799a1f3c62064c0180f7c2507952"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/TwoTell/scripts"
+      ],
+      "package_version": "0.1.0",
+      "declared_checks": [
+        "build",
+        "build:mobile:dependencies",
+        "check:mobile:android",
+        "check:mobile:dependencies",
+        "clean",
+        "db:down",
+        "db:generate",
+        "db:migrate",
+        "db:up",
+        "dev",
+        "dev:api",
+        "dev:mobile",
+        "dev:worker",
+        "doctor:mobile",
+        "format",
+        "format:write",
+        "lint",
+        "manifest:check",
+        "manifest:write",
+        "security:audit",
+        "test",
+        "test:e2e",
+        "test:integration",
+        "test:personal-alpha",
+        "typecheck",
+        "verify"
+      ]
+    },
+    {
+      "path": "Software/Workstation",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "ce8abaea43eabe8392b9663239c73d4ba5400b39",
+        "branch": "main",
+        "changed_entries": 0,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 11,
+      "sources": [
+        {
+          "path": "Software/Workstation/package-lock.json",
+          "bytes": 134576,
+          "sha256": "5f1241919e14c9b95931504c38d62d5198f0c57428dd823f3f26052f344efbe7"
+        },
+        {
+          "path": "Software/Workstation/package.json",
+          "bytes": 1071,
+          "sha256": "2c61a59b4a6e7cecb174890cdfec4113d4932909b5150166e2d446b843d17bc8"
+        },
+        {
+          "path": "Software/Workstation/README.md",
+          "bytes": 542,
+          "sha256": "aec1e744c58ffe6457fe33d295a8035f69e554b3bbd73de0059949353772f1af"
+        }
+      ],
+      "test_entry_paths": [],
+      "package_version": "0.0.0",
+      "declared_checks": [
+        "build",
+        "clean",
+        "dev",
+        "lint",
+        "preview"
+      ]
+    },
+    {
+      "path": "Software/wpai-explorer",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "341feb57c8607528b168fa542fb8d7662c07b46a",
+        "branch": "main",
+        "changed_entries": 99,
+        "untracked_entries": 89,
+        "worktree_count": 1
+      },
+      "root_file_count": 21,
+      "sources": [
+        {
+          "path": "Software/wpai-explorer/AGENTS.md",
+          "bytes": 1651,
+          "sha256": "ddb1990e4efcea3f50de49454a5342b085b78ac3c3768cbf7c724268d639ffdd"
+        },
+        {
+          "path": "Software/wpai-explorer/MANIFEST.md",
+          "bytes": 3094,
+          "sha256": "2885bfbbb975bbefb03b61c9c636ad2402f15707ccf4959721050390acf4b3c8"
+        },
+        {
+          "path": "Software/wpai-explorer/package-lock.json",
+          "bytes": 306709,
+          "sha256": "17ff3174f543cb44d91a22457761cdb677633c5b305c6afb725ee818da753c1f"
+        },
+        {
+          "path": "Software/wpai-explorer/package.json",
+          "bytes": 2747,
+          "sha256": "1d8d56ec8a18efcfb57a37eee0333364e24bb52eaab403a7eb947e525b206142"
+        },
+        {
+          "path": "Software/wpai-explorer/README.md",
+          "bytes": 1844,
+          "sha256": "e0d990a2abb388ac1275494c073d3f944d060f70c1d3dc24b7b2996d59640c33"
+        }
+      ],
+      "test_entry_paths": [
+        "Software/wpai-explorer/scripts"
+      ],
+      "package_version": "1.0.0",
+      "declared_checks": [
+        "build",
+        "build:desktop",
+        "clean",
+        "desktop",
+        "dev",
+        "dist",
+        "dist:dir",
+        "dist:win",
+        "docker:ollama",
+        "docker:up",
+        "lint",
+        "models:pull",
+        "populate:data",
+        "preview",
+        "start",
+        "test"
+      ]
+    },
+    {
+      "path": "Software/XLang",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "0effd5817c6a1c825c71899f2d85893d3ce41ee2",
+        "branch": "codex/xlang-local-first-studio",
+        "changed_entries": 6,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 12,
+      "sources": [
+        {
+          "path": "Software/XLang/AGENTS.md",
+          "bytes": 25461,
+          "sha256": "be957ff0f45544b7f04eb8e1f2aa02ea6f881224b07813aa60b3ad1c36aa2f28"
+        },
+        {
+          "path": "Software/XLang/Cargo.lock",
+          "bytes": 22388,
+          "sha256": "c7c3f26b130eea88a6cb830b18791f78cbd49aaff808c1389a3c177981d6c20b"
+        },
+        {
+          "path": "Software/XLang/Cargo.toml",
+          "bytes": 501,
+          "sha256": "905e6484d136fec8043652710ec369fb2b6ff1dacaaeb70c47a8ef8485ff2e39"
+        },
+        {
+          "path": "Software/XLang/MANIFEST.md",
+          "bytes": 40706,
+          "sha256": "dfe1bdee877a3a720976d38d3ed1e74d0321c2d496922b35abfeb94f18688f9a"
+        },
+        {
+          "path": "Software/XLang/README.md",
+          "bytes": 24262,
+          "sha256": "d767759de8b9eb540ebd933b89d1c93ba7fc78b1b63907c787e32bf14a5260a0"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Software/XTechBot",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "d047df40231d722030ac905cbb40e736e4f27648",
+        "branch": "main",
+        "changed_entries": 1,
+        "untracked_entries": 0,
+        "worktree_count": 1
+      },
+      "root_file_count": 11,
+      "sources": [
+        {
+          "path": "Software/XTechBot/package-lock.json",
+          "bytes": 132951,
+          "sha256": "8e7ef996b8b0ff40c85686daf66065db101ef0b765c453f70d99113583a87c37"
+        },
+        {
+          "path": "Software/XTechBot/package.json",
+          "bytes": 1127,
+          "sha256": "f297174f4a0f66db8319facaa25d0e3f87d21e742c833c65e1a1d39f9fb118da"
+        },
+        {
+          "path": "Software/XTechBot/README.md",
+          "bytes": 2220,
+          "sha256": "36467236e1ff53497ad626387de7e79799573299d3aa452d4831e665b1e60568"
+        }
+      ],
+      "test_entry_paths": [],
+      "package_version": "0.1.0",
+      "declared_checks": [
+        "build",
+        "clean",
+        "dev",
+        "lint",
+        "preview",
+        "start"
+      ]
+    },
+    {
+      "path": "Software/YumNom",
+      "registered": true,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "observed",
+        "head": "2b3ad649f49e2b5793e31e8a26bf1d5778c0fa3c",
+        "branch": "main",
+        "changed_entries": 3,
+        "untracked_entries": 3,
+        "worktree_count": 1
+      },
+      "root_file_count": 5,
+      "sources": [
+        {
+          "path": "Software/YumNom/AGENTS.md",
+          "bytes": 1644,
+          "sha256": "27c01a9a97297ca3a0211d3c9da975628952cb4b9b6bac97ee64efc44dd3cd07"
+        },
+        {
+          "path": "Software/YumNom/SPEC.md",
+          "bytes": 10743,
+          "sha256": "72ad07f016839cf95fc29c911ca051994b2aafbf863c778e6d4d4e7ff45ca100"
+        }
+      ],
+      "test_entry_paths": []
+    },
+    {
+      "path": "Spark",
+      "registered": false,
+      "readiness": "not-certified",
+      "state": "present",
+      "git": {
+        "state": "no-independent-git-root"
+      },
+      "root_file_count": 4,
+      "sources": [
+        {
+          "path": "Spark/Spark.md",
+          "bytes": 28614,
+          "sha256": "571acadce19b9eb957417d3f8335bf885a37ff7c6cf1daebb1cd1e6378fa845d"
+        }
+      ],
+      "test_entry_paths": []
+    }
+  ]
+}

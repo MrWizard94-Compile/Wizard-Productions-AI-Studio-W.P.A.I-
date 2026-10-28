@@ -1,9 +1,18 @@
 # Cross-Project Convergence Map
 
 **Generated:** 2026-08-10  
-**Scope:** AGENTS Constitution (AC), XLang/Aether, PsyForge, Recurrsive, Omni stack, and major adjacent WPAI projects  
+**Scope:** Historical constitutional framework (AC), XLang/Aether, PsyForge, Recurrsive, Omni stack, and major adjacent WPAI projects  
 **Method:** Extract *actual* primitives from design docs, types, architecture specs, and runnable surfaces — not marketing names  
 **Stance:** Convergence means the *same abstraction* appears independently (or near-independently) in more than one product lineage. Shared constitution law is noted as *inherited*, not convergent invention.
+
+**Governance routing correction — 2026-10-18:** This remains the August 10
+research snapshot, not a fresh product, runtime or invention audit. Its AC
+primitives describe the historical framework. Current law comes only from the
+accepted [WPAI Constitution](https://github.com/MrWizard94-Compile/Agents-Constitution)
+using `wpai-constitution` and one verified frozen source revision; this research
+map does not authorize loading or distributing the retired local pack.
+The recovery anchor preserves the retained local variant; it does not establish
+a byte-exact reconstruction of the August 10 research input.
 
 ---
 
@@ -13,7 +22,7 @@
 |------|---------|
 | **Primitive** | A named concept that is *load-bearing* in design or code (types, kernels, gates, stores, effects) — not a UI label |
 | **Independent appearance** | Same idea, different product lineage, not merely copied from a shared lib |
-| **Inherited** | Explicitly bound via AGENTS Constitution, SOUL, or a shared control-plane doc |
+| **Inherited** | Shared constitutional lineage or a shared control-plane document; historical inheritance is not current source authority |
 | **Projected** | Same SoT reflected in another system (e.g. Janus tasks → BLACKBOARD status) |
 
 **Evidence grades**
@@ -29,7 +38,7 @@
 
 ## 2. Project primitive inventories
 
-### 2.1 AGENTS Constitution (AC)
+### 2.1 Historical constitutional framework (AC)
 
 | Primitive | Role | Evidence |
 |-----------|------|----------|
@@ -608,7 +617,7 @@ Not a mandate — options ranked by “reduce re-solving without collapsing doma
 
 | Project | Primary anchors read |
 |---------|----------------------|
-| AC | `AGENTS Constitution/AGENTS.md`, `SOP.md` |
+| AC | Historical root and SOP in the preserved source revision below; current law uses the canonical source, not these research anchors |
 | Aether | `Software/XLang/README.md`, `docs/ARCHITECTURE.md`, `docs/CORE_CLAIMS.md` |
 | PsyForge | `Software/psyforge/DESIGN.md`, `src/types/index.ts`, master TOC |
 | Recurrsive | `CURRENT_ARCHITECTURE.md`, `RECURSIVE_STATE.md` |
@@ -620,6 +629,8 @@ Not a mandate — options ranked by “reduce re-solving without collapsing doma
 | DigiChar | `docs/ARCHITECTURE.md` |
 | PyMason | `PYMASON_VISION.md` |
 | Catalog | `WPAI-CATALOG.md`, `PROJECT-REGISTRY.md` |
+
+Historical recovery (not active law): `git show 3b0eacf8f3cbefbcad4c8395d324824db1919ba3:AGENTS Constitution/AGENTS.md`
 
 ---
 

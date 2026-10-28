@@ -4,7 +4,7 @@
 |-------|-------|
 | **Pack root** | `C:\WPAI\AGENTS Constitution` |
 | **Pack VERSION** | 5.1.0 |
-| **Date (UTC)** | 2026-08-27 00:22:51Z |
+| **Date (UTC)** | 2026-10-08 18:12:05Z |
 | **Constitution** | AGENTS.md (see header) |
 | **SOP** | SOP-PROD-001 |
 | **Portability** | Path-independent; root may be moved |
@@ -53,7 +53,7 @@ RESULT: PASS (GOV-INT-001)
 # Pack Self-Audit
 
 **Pack root:** `C:\WPAI\AGENTS Constitution`
-**Date (UTC):** 2026-08-27 00:22:55Z
+**Date (UTC):** 2026-10-08 18:12:10Z
 **Rules:** CONST-GATE-001, CONST-DONE-001, GOV-INT-001, GOV-SYNC-001
 
 ## 1. GOV-INT-001 verify-pack

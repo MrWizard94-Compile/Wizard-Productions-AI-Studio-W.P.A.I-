@@ -18,7 +18,7 @@ The human director sets vision and priorities. AI collaborators own detailed inv
 
 ## 2. Working Rules
 
-- Treat the canonical WPAI Constitution as the top-level operating standard: complete, documented, tested, maintainable work; protect Git history and documentation as cognitive infrastructure. The local `AGENTS Constitution` folder is a historical pack pending audited retirement, not live law.
+- Treat the canonical WPAI Constitution as the top-level operating standard: complete, documented, tested, maintainable work; protect Git history and documentation as cognitive infrastructure. Older local packs are historical evidence pending consumer reconciliation, not live law. Use root `AGENTS.md` and the `wpai-constitution` skill; freeze and verify accepted source per invocation.
 - Before entering a project, read its `AGENTS.md`, `CLAUDE.md`, README, specification, and design documents when present. Known project-local instruction files exist in AI Research projects and PyMason.
 - Keep context source-linked. Label a statement as **verified**, **director decision**, or **needs verification** rather than guessing.
 - Do not open, copy, log, or place credentials in this record. Use placeholders and project-local secret-handling procedures only.

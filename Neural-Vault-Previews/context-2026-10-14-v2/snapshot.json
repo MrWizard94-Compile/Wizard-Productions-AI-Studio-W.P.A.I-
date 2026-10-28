@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "1.0.0",
+  "snapshotId": "56cc4746cbf6fd2b2bb317c3eb0b70107dcc0531346e514bab5ced2fe9a91d4e",
+  "builtAt": "2026-10-14T15:49:58.172Z",
+  "freshnessBoundMs": 30000,
+  "coverage": "complete_at_build",
+  "seed": "WPAI-CONTEXT.md",
+  "nodes": [
+    {
+      "id": "WPAI-CONTEXT.md",
+      "activation": 1,
+      "evidenceIds": [],
+      "omittedEvidenceCount": 0
+    },
+    {
+      "id": ".agents/AGENTS.md",
+      "activation": 0.9,
+      "evidenceIds": [
+        "e1"
+      ],
+      "omittedEvidenceCount": 0
+    },
+    {
+      "id": "Gaming/Games/Chronos Nexus/docs/DEVELOPMENT-ONBOARDING.md",
+      "activation": 0.9,
+      "evidenceIds": [
+        "e2"
+      ],
+      "omittedEvidenceCount": 0
+    },
+    {
+      "id": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Cageborn/AGENTS.md",
+      "activation": 0.9,
+      "evidenceIds": [
+        "e3"
+      ],
+      "omittedEvidenceCount": 0
+    },
+    {
+      "id": "Gaming/Minecraft/Mods-1.21.1-NeoForge/MicroTerrain/AGENTS.md",
+      "activation": 0.9,
+      "evidenceIds": [
+        "e4"
+      ],
+      "omittedEvidenceCount": 0
+    },
+    {
+      "id": "docs/portfolio/README.md",
+      "activation": 0.9,
+      "evidenceIds": [
+        "e5"
+      ],
+      "omittedEvidenceCount": 0
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": ".agents/AGENTS.md",
+      "to": "WPAI-CONTEXT.md",
+      "kind": "markdown",
+      "authored": true,
+      "weight": 0.9,
+      "detail": "[company context](../WPAI-CONTEXT.md)",
+      "detailTruncated": false
+    },
+    {
+      "id": "e2",
+      "from": "Gaming/Games/Chronos Nexus/docs/DEVELOPMENT-ONBOARDING.md",
+      "to": "WPAI-CONTEXT.md",
+      "kind": "markdown",
+      "authored": true,
+      "weight": 0.9,
+      "detail": "[WPAI-CONTEXT.md](../../../../WPAI-CONTEXT.md)",
+      "detailTruncated": false
+    },
+    {
+      "id": "e3",
+      "from": "Gaming/Minecraft/Mods-1.21.1-NeoForge/Cageborn/AGENTS.md",
+      "to": "WPAI-CONTEXT.md",
+      "kind": "markdown",
+      "authored": true,
+      "weight": 0.9,
+      "detail": "[WPAI-CONTEXT.md](../../../../WPAI-CONTEXT.md)",
+      "detailTruncated": false
+    },
+    {
+      "id": "e4",
+      "from": "Gaming/Minecraft/Mods-1.21.1-NeoForge/MicroTerrain/AGENTS.md",
+      "to": "WPAI-CONTEXT.md",
+      "kind": "markdown",
+      "authored": true,
+      "weight": 0.9,
+      "detail": "[WPAI-CONTEXT.md](../../../../WPAI-CONTEXT.md)",
+      "detailTruncated": false
+    },
+    {
+      "id": "e5",
+      "from": "docs/portfolio/README.md",
+      "to": "WPAI-CONTEXT.md",
+      "kind": "markdown",
+      "authored": true,
+      "weight": 0.9,
+      "detail": "[`../../WPAI-CONTEXT.md`](../../WPAI-CONTEXT.md)",
+      "detailTruncated": false
+    }
+  ],
+  "brokenFromSeed": {
+    "wiki": 0,
+    "markdown": 0
+  }
+}

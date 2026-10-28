@@ -3,43 +3,32 @@
 **Cataloger:** Corwin (Claude Sonnet 4.6)  
 **Root:** `C:\WPAI\`  
 **Method:** Full recursive traversal via Filesystem MCP — every entry sourced from files actually read.  
-**Pack applied:** AGENTS Constitution v5.0.1
+**Governance routing corrected:** 2026-10-18; use the canonical WPAI Constitution below. Other product observations and counts remain dated catalog evidence, not current readiness claims.
 
 ---
 
 ## Governance Layer
 
-### AGENTS Constitution Pack
-**Path:** `C:\WPAI\AGENTS Constitution\`  
-**Version:** 5.0.1 (LOCKED)  
-**Purpose:** Universal quality law for the entire WPAI empire. All projects bind via a Level 4 `AGENTS.md` pointer. No project may weaken `CONST-*` rules without a documented override.  
-**Verify:** `pwsh -File "AGENTS Constitution/tools/verify-pack.ps1"` (must exit 0)
+### WPAI Constitution — one editable source
 
-**Always-load set:**
+**Authority:** accepted `main` of
+[MrWizard94-Compile/Agents-Constitution](https://github.com/MrWizard94-Compile/Agents-Constitution).  
+**Entry:** [root AGENTS.md](AGENTS.md) and the `wpai-constitution` skill.
 
-| Path | Module ID | Version |
-|------|-----------|---------|
-| `AGENTS.md` | MOD-CONST-ROOT-001 | root authority |
-| `SOP.md` | MOD-SOP-PROD-001 | process |
-| `constitution/03-DEFINITION-OF-DONE.md` | MOD-CONST-DONE-001 | 1.1.0 |
-| `standards/ENGINEERING.md` | MOD-ENG-001 | 1.1.0 |
-| `standards/TESTING.md` | MOD-TEST-001 | 1.1.0 |
-| `standards/DOCUMENTATION.md` | MOD-DOC-001 | 1.1.0 |
+For each top-level invocation, verify and record one accepted commit, then load
+that revision's SKILL, SOURCE manifest, always-load set and applicable law.
+Generated mirrors are verified distributions; folder location and an old
+version declaration do not establish authority. Read project-local scope,
+commands and approval boundaries separately. Do not duplicate module law in
+this catalog or use the historical pack's discovery/verification commands.
 
-**Full module inventory:**
+Use the frozen source's `tools/validate-source.py` and tests for source integrity,
+its `tools/check-adoption.py` for consumer findings, and all 15 Section 0 checks
+for delivery. A clean static scan is not installed-consumer, runtime or physical
+acceptance. Follow the frozen skill's fallback when current source cannot be
+verified; do not claim fresh law from an unverified copy.
 
-| Category | Paths |
-|----------|-------|
-| Governance | `VERSION`, `PACK.md`, `LOCK.md`, `ADOPT.md`, `RULE-REGISTRY.md`, `MODULE-INDEX.md`, `INTEGRITY.md`, `Modularize.md`, `README.md` |
-| Constitution | `constitution/00-CORE-LAW.md`, `01-AUTHORITY-AND-PRECEDENCE.md`, `02-HUMAN-AI-CONTRACT.md`, `03-DEFINITION-OF-DONE.md` |
-| Standards | `ENGINEERING.md`, `TESTING.md`, `DOCUMENTATION.md`, `SECURITY.md`, `PERFORMANCE.md`, `DEPENDENCIES.md`, `OBSERVABILITY.md` |
-| Operations | `DELIVERY.md`, `VERSION-CONTROL.md`, `RELEASES.md`, `REFACTORING.md`, `MIGRATIONS.md`, `PROJECT-LIFECYCLE.md` |
-| Collaboration | `MULTI-AGENT.md`, `CONTEXT-SWITCHING.md`, `REVIEW-PACKAGING.md`, `INSTITUTIONAL-MEMORY.md` |
-| Specialist | `NOVEL-RND.md`, `IP-AND-INVENTION.md`, `NETWORKING.md`, `LOW-LEVEL-SAFETY.md`, `CONSTRAINED-HARDWARE.md` |
-| Templates | `MANIFEST.template.md`, `ADR.template.md`, `AUDIT.template.md`, `DELIVERY-REPORT.template.md`, `PROJECT-OVERRIDE.template.md`, `PROJECT-POINTER.template.md` |
-| Tools | `verify-pack.ps1`, `self-audit.ps1`, `run-full-constitution-self.ps1`, `write-checksums.ps1` |
-
-**Load triggers (non-always modules):** SECURITY — untrusted input / auth / ship. PERFORMANCE — hot paths / budgets. DEPENDENCIES — add/upgrade/remove deps. OBSERVABILITY — failure modes / production diag. NOVEL-RND — novel architectures. LOW-LEVEL-SAFETY — unsafe / mixins / bytecode. CONSTRAINED-HARDWARE — RAM/CPU/GPU limits.
+Historical recovery (not active law): `git show 3b0eacf8f3cbefbcad4c8395d324824db1919ba3:AGENTS Constitution/AGENTS.md`
 
 ---
 
@@ -47,12 +36,10 @@
 
 | File | Purpose |
 |------|---------|
-| `AGENTS.md` | Empire entry point — Level 4 pointer to AGENTS Constitution pack |
+| `AGENTS.md` | Company entry point and project-local pointer to the canonical WPAI Constitution |
 | `WPAI-ROADMAP.md` | Company sequencing, division activation gates, 90-day plan |
 | `REVENUE-PLAN.md` | Revenue lines ranked by time-to-first-dollar; realistic 90-day projections |
-| `SOUL.md` | Current governing soul (delegates to SOULv2.0.0.md) |
-| `SOULv2.0.0.md` | Canonical soul document v2.0.0 |
-| `SOUL.md.legacy-pre-pack-20260727-205752` | Pre-pack migration backup |
+| Historical governance variants | Superseded evidence only; recover from verified history/private recovery, not active onboarding |
 | `WPAI-CONTEXT.md` | Studio-wide context summary |
 | `MyGrokKeys.md` | API key references (sensitive — not read) |
 | `Candidate1.mp4` | Video asset |
@@ -209,7 +196,7 @@ Plus `Omni32-Modpack/` — Omni32 resource pack distributed as a modpack.
 **Path:** `Software\RepoForge\` · **Has .git** · **Status:** 🚀 LIVE on Gumroad — $14 launch / $19 standard  
 **Free funnel:** RepoForge Lite on GitHub (MIT, stdlib-only)  
 **What:** Single Python stdlib file. One command bootstraps a production-ready Python project: venv, curated deps by profile, .gitignore, README, LICENSE, pyproject.toml, passing test, GitHub remote.  
-**AGENTS Constitution integration:** `--constitution` flag attaches pack to every new project. Auto-discovery of nearby packs.  
+**Governance integration:** Use RepoForge's current project entry and documentation with the canonical WPAI Constitution. The catalog's former nearby-pack discovery description is retired, not an instruction to install old law or proof of any currently installed release.  
 **Profiles:** minimal · general · cli · fastapi · data · ml-experiment (EXPERIMENT_LOG + CLAIMS registries) · automation  
 **Stack:** Python 3.9+, stdlib only, zero dependencies.  
 **Tests:** ~23 pytest tests, ~40 seconds, no network needed.  
@@ -796,8 +783,8 @@ See `WPAI-CATALOG-ADDENDUM-AutomationLab.md` for the full entry. Summary:
 | Metric | Value |
 |--------|-------|
 | Divisions | 6 |
-| AGENTS Constitution pack version | 5.0.1 |
-| Pack modules | 30+ |
+| Current governance source | Accepted GitHub `main`; freeze per invocation, not the catalog date |
+| Historical governance module count | 30+ at the original catalog date; not a current source inventory |
 | Software projects (distinct) | 16 |
 | AI Research projects (distinct) | 12 |
 | Janus registered workloads | 22 (20 active/canonical/stale, 2 legacy) |
